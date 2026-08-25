@@ -1,0 +1,29 @@
+name: Broken definition
+description: Report an existing indexer definition that no longer works
+title: "[Indexer]: "
+labels: [broken-definition]
+body:
+  - type: input
+    id: definition
+    attributes:
+      label: Definition ID
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Observed behavior
+      description: Remove cookies, credentials, tokens, and private URLs from logs.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: IndexLoom version or commit
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety checks
+      options:
+        - label: I removed all secrets and account-specific data.
+          required: true

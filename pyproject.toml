@@ -1,0 +1,12 @@
+[project]
+name = "indexloom-indexers-validator"
+version = "0.1.0"
+description = "Validation tooling for IndexLoom indexer definitions"
+requires-python = ">=3.12"
+dependencies = [
+  "jsonschema[format]>=4.25.1,<5",
+  "pyyaml>=6.0.2,<7",
+]
+
+[tool.uv]
+package = false

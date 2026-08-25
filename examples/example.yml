@@ -1,0 +1,25 @@
+apiVersion: indexloom.io/v1alpha1
+kind: Indexer
+metadata:
+  id: example
+  name: Example indexer
+  description: Non-production example for definition authors.
+  language: en
+spec:
+  privacy: public
+  baseUrls:
+    - https://example.invalid
+  capabilities:
+    - search
+  search:
+    method: GET
+    path: /search
+    inputs:
+      q: "{{ query }}"
+    rows: .result
+    fields:
+      title:
+        selector: .title
+      details:
+        selector: a.details
+        attribute: href
