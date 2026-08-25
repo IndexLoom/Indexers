@@ -5,21 +5,40 @@ metadata:
   name: Example indexer
   description: Non-production example for definition authors.
   language: en
+provenance:
+  generatedBy: indexloom-importer/v1
+  source:
+    project: jackett
+    repository: https://github.com/Jackett/Jackett
+    revision: "0000000000000000000000000000000000000000"
+    path: src/Jackett.Common/Definitions/example.yml
+    sourceId: example
+    license: GPL-2.0-only
+    fileSha256: "0000000000000000000000000000000000000000000000000000000000000000"
+    contentSha256: "0000000000000000000000000000000000000000000000000000000000000000"
 spec:
+  protocol: torrent
   privacy: public
   baseUrls:
-    - https://example.invalid
-  capabilities:
-    - search
-  search:
-    method: GET
-    path: /search
-    inputs:
-      q: "{{ query }}"
-    rows: .result
-    fields:
-      title:
-        selector: .title
-      details:
-        selector: a.details
-        attribute: href
+    - https://example.invalid/
+  implementation:
+    engine: cardigann
+    encoding: UTF-8
+    capabilities:
+      modes:
+        search: [q]
+      categories: {}
+    settings: []
+    search:
+      paths:
+        - path: /search?q={{ .Keywords }}
+          response:
+            type: html
+      rows:
+        selector: .result
+      fields:
+        title:
+          selector: .title
+        details:
+          selector: a.details
+          attribute: href

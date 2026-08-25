@@ -2,21 +2,25 @@
 
 Thank you for improving IndexLoom's definition catalog.
 
-## Definition requirements
+## Generated definitions
 
-1. Start with the current schema in `schema/v1alpha1/indexer.schema.json`.
-2. Use a lowercase kebab-case ID and save the file as `<id>.yml`.
-3. Prefer HTTPS base URLs and do not embed credentials, cookies, tokens, or
-   user-specific endpoints.
-4. Include only selectors and request behavior you personally verified.
-5. Run `uv run python tools/validate.py` before opening a pull request.
+Files in `definitions/` are reproducible outputs and must not be edited by
+hand. Fix the licensed upstream definition or the converter, pin the intended
+upstream commit, regenerate the complete catalog, and include the resulting
+`catalog.json` update.
 
-## Provenance
+The importer must preserve all executable Cardigann behavior, provenance, and
+the source license. New source catalogs require a documented, compatible
+license and an explicit deterministic precedence/deduplication rule.
 
-Do not copy or mechanically translate third-party definitions unless their
-license is compatible, attribution is preserved, and maintainers explicitly
-approve the import. A site being supported by another project is useful
-research context, but its implementation is not automatically reusable here.
+## Required checks
 
-By submitting a contribution, you certify that you have the right to license it
-under `AGPL-3.0-or-later`.
+1. Run `uv run python tools/validate.py`.
+2. Run the importer twice from the same source revisions and confirm that the
+   generated tree and `catalog.json` are byte-for-byte identical.
+3. Do not include credentials, cookies, tokens, or user-specific endpoints.
+4. Explain any change to canonical selection, aliasing, or ID normalization.
+
+Repository-authored changes to tooling, schemas, examples, and documentation
+are submitted under `AGPL-3.0-or-later`. Generated definition files retain the
+compatible source license recorded in their SPDX headers and provenance.

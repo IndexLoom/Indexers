@@ -1,12 +1,13 @@
-## Definition
+## Catalog change
 
-- Indexer ID:
-- Access model: public / semi-private / private
-- Tested base URL:
+- Upstream repository and pinned commit:
+- Affected indexer IDs:
+- Deduplication or canonical-selection changes:
 
 ## Validation
 
 - [ ] `uv run python tools/validate.py` passes.
-- [ ] The filename matches `metadata.id`.
+- [ ] Two imports from the same revisions are byte-for-byte identical.
 - [ ] No credentials, cookies, tokens, or user-specific data are included.
-- [ ] I have the right to license this contribution under AGPL-3.0-or-later.
+- [ ] Imported content has a documented compatible license and preserved provenance.
+- [ ] Repository-authored changes are licensed under AGPL-3.0-or-later.

@@ -1,0 +1,3912 @@
+{
+  "catalogVersion": 1,
+  "definitionSchema": "indexloom.io/v1alpha1",
+  "generatedBy": "indexloom-importer/v1",
+  "definitionCount": 553,
+  "sources": [
+    {
+      "project": "jackett",
+      "repository": "https://github.com/Jackett/Jackett",
+      "revision": "79af48a825cfd3a395acc5726b24f6483e83cb52",
+      "discovered": 552,
+      "selected": 552,
+      "license": "GPL-2.0-only"
+    },
+    {
+      "project": "prowlarr-indexers",
+      "repository": "https://github.com/Prowlarr/Indexers",
+      "revision": "a83e714e38ca1caa3bbc64d9455c772442822da2",
+      "discovered": 545,
+      "selected": 1,
+      "license": "GPL-2.0-only",
+      "licenseBasis": "Cardigann definitions derived from Jackett GPL-2.0 sources"
+    }
+  ],
+  "deduplication": {
+    "strategy": "prefer Jackett for matching IDs; collapse cross-ID site aliases",
+    "sameId": 543,
+    "sameIdSemanticallyEqual": 486,
+    "sameIdDifferent": 57,
+    "aliases": [
+      {
+        "sourceId": "showrss-yml",
+        "canonicalId": "showrss",
+        "reason": "same normalized name and base URL set"
+      }
+    ],
+    "selectedFromProwlarr": 1
+  },
+  "definitions": [
+    {
+      "id": "0daykiev",
+      "path": "definitions/0daykiev.yml",
+      "sha256": "75822885a16648a632ca0fc731558188ece5213bef3ccdd377ba8a0bb99162eb",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/0daykiev.yml"
+    },
+    {
+      "id": "0magnet",
+      "path": "definitions/0magnet.yml",
+      "sha256": "34d8dd6aaf8d8515039de1c33dfb7a475d2eb2f9d8a2acfcae3200b41b09269a",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/0magnet.yml"
+    },
+    {
+      "id": "1337x",
+      "path": "definitions/1337x.yml",
+      "sha256": "4a34fda66e28a3b05ec0b6b90ef2ab3f65256ab4e2c69278500a672b221b22a0",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/1337x.yml"
+    },
+    {
+      "id": "13city",
+      "path": "definitions/13city.yml",
+      "sha256": "835836eb5379ac7900b53c6795ce481ecafc1b516cb8b0159ded9816768db084",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/13city.yml"
+    },
+    {
+      "id": "1ptbar",
+      "path": "definitions/1ptbar.yml",
+      "sha256": "0fb8b2a3ff55d35330c32045be7c14f591bafec7e59d01ffec8be1deb785d9d2",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/1ptbar.yml"
+    },
+    {
+      "id": "3dtorrents",
+      "path": "definitions/3dtorrents.yml",
+      "sha256": "205a4056429fa3e74fa1eaf92172e2d5bd3aa19c1473d529759b7dbe57be77c8",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/3dtorrents.yml"
+    },
+    {
+      "id": "4thd",
+      "path": "definitions/4thd.yml",
+      "sha256": "ca4453528252037a22a54a2276778e152f40ccb78c8ca2b00a92d04f20b0b9dd",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/4thd.yml"
+    },
+    {
+      "id": "52bt",
+      "path": "definitions/52bt.yml",
+      "sha256": "1eeeff8750b947b635415d01301db495b37a50068e4d48cc06cde38a22adcb10",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/52bt.yml"
+    },
+    {
+      "id": "52pt",
+      "path": "definitions/52pt.yml",
+      "sha256": "1572a0b70dd86e491d956c9bcf990bcda4b9167405a18587909d080b8bf03222",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/52pt.yml"
+    },
+    {
+      "id": "abnormal-api",
+      "path": "definitions/abnormal-api.yml",
+      "sha256": "0a5ea0fb6471e7ac3cf04d36b7cb35849899e3561fd46461b82c6757a85526c2",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/abnormal-api.yml"
+    },
+    {
+      "id": "abtorrents",
+      "path": "definitions/abtorrents.yml",
+      "sha256": "c73cdcef02ff7972ffd024ecd8a8e26d6e6c5171fe1d8c9d77c6efc641ae61d4",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/abtorrents.yml"
+    },
+    {
+      "id": "acgrip",
+      "path": "definitions/acgrip.yml",
+      "sha256": "3f1439df29a27967e16d9d32cd433db9b72722f2c4b1ab38a05e8bcd4a749721",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/acgrip.yml"
+    },
+    {
+      "id": "acrossthetasman",
+      "path": "definitions/acrossthetasman.yml",
+      "sha256": "32f5cfa8e2493be63c6123671429bac00784123ce86b88fc0d75abcc2597c645",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/acrossthetasman.yml"
+    },
+    {
+      "id": "aftershock",
+      "path": "definitions/aftershock.yml",
+      "sha256": "103e32af49c523ab941819673e17eaf9ec8d8e91372c13eb0e2ae9b303a5bd14",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/aftershock.yml"
+    },
+    {
+      "id": "agsvpt",
+      "path": "definitions/agsvpt.yml",
+      "sha256": "cdd562515506ae18492be7de13639c380722e684dcf598748a876c695d97457f",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/agsvpt.yml"
+    },
+    {
+      "id": "aidoruonline",
+      "path": "definitions/aidoruonline.yml",
+      "sha256": "8f55385d7b6a2eaeab38557b9423e989a0bd127de2011e82210cddbf2e36c4b4",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/aidoruonline.yml"
+    },
+    {
+      "id": "aither-api",
+      "path": "definitions/aither-api.yml",
+      "sha256": "711d2ec2c49d823e24c76ce9738471ef85ce9ac42dde4c44fdac79bc529773de",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/aither-api.yml"
+    },
+    {
+      "id": "alingpt",
+      "path": "definitions/alingpt.yml",
+      "sha256": "0c6aa4f91951e2cf2e9223e3747d1208c7d2f88eb400bba13c0852e103449d3e",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/alingpt.yml"
+    },
+    {
+      "id": "amigosshare",
+      "path": "definitions/amigosshare.yml",
+      "sha256": "24786331dc14ef61a1cfc6f3a7033be2dfcc6ce2e1d741709d1037c3a0e302a5",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/amigosshare.yml"
+    },
+    {
+      "id": "anibt",
+      "path": "definitions/anibt.yml",
+      "sha256": "a72957361f4b9e60b903d16491e6cf05a0b7750328e9dd8cb5ec98d34081d814",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/anibt.yml"
+    },
+    {
+      "id": "animebybelka",
+      "path": "definitions/animebybelka.yml",
+      "sha256": "27efd8f5acca64928aced611fa7121a4a3c49e710a9b9376cfc6caf9c41c6ecf",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/animebybelka.yml"
+    },
+    {
+      "id": "animelayer",
+      "path": "definitions/animelayer.yml",
+      "sha256": "c29d330007bd13c054873a193178050122a77387db608c84ac16dfbb0c010c27",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/animelayer.yml"
+    },
+    {
+      "id": "animetorrentsro",
+      "path": "definitions/animetorrentsro.yml",
+      "sha256": "e93ed7185ff7fa4167b82abd772c6464acaa0500f8a0d6589333583dcc0af663",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/animetorrentsro.yml"
+    },
+    {
+      "id": "animetosho-xyz",
+      "path": "definitions/animetosho-xyz.yml",
+      "sha256": "1f055238d0108c689f7086d4b470b5f047eb18b727400188dd2a68eaeda2586e",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/animetosho-xyz.yml"
+    },
+    {
+      "id": "animeworld-api",
+      "path": "definitions/animeworld-api.yml",
+      "sha256": "6cb1896451b5b3361052f1fc40b4eb63d03522aea95521c4d83001233857e478",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/animeworld-api.yml"
+    },
+    {
+      "id": "anirena",
+      "path": "definitions/anirena.yml",
+      "sha256": "587314cc20b7ce5136541938ba1e33aa6914e53533f0955becc0372ea08a4430",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/anirena.yml"
+    },
+    {
+      "id": "anisource",
+      "path": "definitions/anisource.yml",
+      "sha256": "a24c569eae491a0f8ef293ed91d2844807e06f8fde089d66402f2a12185064b7",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/anisource.yml"
+    },
+    {
+      "id": "anthelion-api",
+      "path": "definitions/anthelion-api.yml",
+      "sha256": "21bbab6bfe0696923d9674f26d068f7ad8a49f135cf79de008920abb812be114",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/anthelion-api.yml"
+    },
+    {
+      "id": "arabafenice",
+      "path": "definitions/arabafenice.yml",
+      "sha256": "8d65051a1da34f8e84beeb97698772b994ee9f5f9d158f2d74280cc07d0fa4bf",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/arabafenice.yml"
+    },
+    {
+      "id": "arabicsource-api",
+      "path": "definitions/arabicsource-api.yml",
+      "sha256": "eb59bfaa4ddb70c344cdb30dac0989efc225a5cd4716879826209fa02b4acd75",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/arabicsource-api.yml"
+    },
+    {
+      "id": "arabp2p",
+      "path": "definitions/arabp2p.yml",
+      "sha256": "4559589700bc601a63e622e512ec3891001927dbc25dd7d5918230b4cadeb01c",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/arabp2p.yml"
+    },
+    {
+      "id": "arabscene",
+      "path": "definitions/arabscene.yml",
+      "sha256": "1063456056c2ea1f925c9a15680b6d19563149dbd14b53104a82bb2033ad6fe3",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/arabscene.yml"
+    },
+    {
+      "id": "arabtorrents",
+      "path": "definitions/arabtorrents.yml",
+      "sha256": "719c5be71d44531741da60f89533f182c120f4ca54838d5a3768026ccf7afd32",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/arabtorrents.yml"
+    },
+    {
+      "id": "asiancinema",
+      "path": "definitions/asiancinema.yml",
+      "sha256": "56f23e0ae6863f56cd1d70f22e10c604181d5f7fca6add9cba2c792b069fefc8",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/asiancinema.yml"
+    },
+    {
+      "id": "asiandvdclub",
+      "path": "definitions/asiandvdclub.yml",
+      "sha256": "d56f52e374dcc88ee1c630d7689a5926d646ce1ae3de05882f51959caf5da30a",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/asiandvdclub.yml"
+    },
+    {
+      "id": "audiences",
+      "path": "definitions/audiences.yml",
+      "sha256": "d220470e902dc5a87333187a7c05158d46943ef8be47d3d2ff7cb68030496306",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/audiences.yml"
+    },
+    {
+      "id": "audionews",
+      "path": "definitions/audionews.yml",
+      "sha256": "fa06d1737d6523a31381da63c35e4eff359af77ff1fa1e8e2493564663ddbb9d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/audionews.yml"
+    },
+    {
+      "id": "aussierules",
+      "path": "definitions/aussierules.yml",
+      "sha256": "751bcb46131577a5fb9c852fd1faeebba92006fb32af9bea17ce360309564a39",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/aussierules.yml"
+    },
+    {
+      "id": "azusa",
+      "path": "definitions/azusa.yml",
+      "sha256": "c51320b9616daca98c1aee65bd23d81222ca0ee4bd67f3d3d0e813874992b865",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/azusa.yml"
+    },
+    {
+      "id": "backups",
+      "path": "definitions/backups.yml",
+      "sha256": "57a2187096303a593c9843bea76dec3bb550d6442219d0fc9bdeeeaf7f362f3d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/backups.yml"
+    },
+    {
+      "id": "bangumi-moe",
+      "path": "definitions/bangumi-moe.yml",
+      "sha256": "1491993f4763f05fa4fec6288fd879b6ee0f7c10c16b1d04a5554369bc758915",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/bangumi-moe.yml"
+    },
+    {
+      "id": "baozipt",
+      "path": "definitions/baozipt.yml",
+      "sha256": "d699e401777926a014d8e34dd39a3b551694275fa8763259722a15a94ff6884c",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/baozipt.yml"
+    },
+    {
+      "id": "beload",
+      "path": "definitions/beload.yml",
+      "sha256": "8b6cb12b43260f5e4ac102f5885a7f35144870e224240d1e5c26b7fc9fcb6a5c",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/beload.yml"
+    },
+    {
+      "id": "best-torrents",
+      "path": "definitions/best-torrents.yml",
+      "sha256": "84cbc826c9bf93b8a6d15b1411faf47680c792b93563ef617b8920f99faa1ab0",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/best-torrents.yml"
+    },
+    {
+      "id": "bestcore",
+      "path": "definitions/bestcore.yml",
+      "sha256": "f865a6c26c304e3acf35350695efc12c5354dc0496824ca4adc5e75585350cd2",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/bestcore.yml"
+    },
+    {
+      "id": "bibliotik",
+      "path": "definitions/bibliotik.yml",
+      "sha256": "b378b56449f801216db8ada44927416896e14781edb9893cee41854567ec28ab",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/bibliotik.yml"
+    },
+    {
+      "id": "bigbbs",
+      "path": "definitions/bigbbs.yml",
+      "sha256": "4fd87a013559e2734d9816e5f21528f8aee120efd32a13a905efe15d77ce4e1b",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/bigbbs.yml"
+    },
+    {
+      "id": "bigcore",
+      "path": "definitions/bigcore.yml",
+      "sha256": "053e456ea462ac76dfaab1e09e307d0d65c237c36a1bdb7eaac1540d4cf6f7d3",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/bigcore.yml"
+    },
+    {
+      "id": "bigfangroup",
+      "path": "definitions/bigfangroup.yml",
+      "sha256": "45cdfb838a1542be13637ea86b106fa9071d59f9c45b6894d5a46b4e3e76d9fd",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/bigfangroup.yml"
+    },
+    {
+      "id": "bitbazis",
+      "path": "definitions/bitbazis.yml",
+      "sha256": "caf2f4432c9abeaa929fad1b5102676e8e4640cf6ba5fb63096d61e030b522cc",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/bitbazis.yml"
+    },
+    {
+      "id": "bitded",
+      "path": "definitions/bitded.yml",
+      "sha256": "132d66e7dddbcf0cf69014cfd16d82986a47f75cf3d5784fdb2632cae471c878",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/bitded.yml"
+    },
+    {
+      "id": "bitgamer",
+      "path": "definitions/bitgamer.yml",
+      "sha256": "ee5cc068606e3e1d25668526831ec2ba5bda3ea00983956d0efaa39dec3190ce",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/bitgamer.yml"
+    },
+    {
+      "id": "bithumen",
+      "path": "definitions/bithumen.yml",
+      "sha256": "f0156b8c90bd7f92ca7fef578f097101cf02686129ec93530431d0aaef838261",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/bithumen.yml"
+    },
+    {
+      "id": "bitmagnet",
+      "path": "definitions/bitmagnet.yml",
+      "sha256": "d97e32ed1829864a857fce85be44d6d71a8f405e4dd5e0d55ad4a940fc376e57",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/bitmagnet.yml"
+    },
+    {
+      "id": "bitpalace",
+      "path": "definitions/bitpalace.yml",
+      "sha256": "fc2cfd63e9f3353076b32cfed96f4aeff7111fac6c83adfb346f0093e9a6bc33",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/bitpalace.yml"
+    },
+    {
+      "id": "bitporn",
+      "path": "definitions/bitporn.yml",
+      "sha256": "c7ccd0dfad83d81bfba0f3f6f19ae36a95bb068757ca198932da80fac86bdd94",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/bitporn.yml"
+    },
+    {
+      "id": "bittorrentfiles",
+      "path": "definitions/bittorrentfiles.yml",
+      "sha256": "a8e1d84dcf50996a8d0258c54b6c7e4249c5405d6f43d5efa4638f0beee32686",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/Bittorrentfiles.yml"
+    },
+    {
+      "id": "bitturk",
+      "path": "definitions/bitturk.yml",
+      "sha256": "453073adb17855b1f70f029997d664219eb4f40752949c54526dcc4e93845496",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/bitturk.yml"
+    },
+    {
+      "id": "bjshare",
+      "path": "definitions/bjshare.yml",
+      "sha256": "756d5582778464a729dd364cc5f5c9f0dcfd309c0a9211bf5690ec16255dcac7",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/bjshare.yml"
+    },
+    {
+      "id": "bluebirdhd",
+      "path": "definitions/bluebirdhd.yml",
+      "sha256": "88c4c2e0d40f0034cb3a6f5a9809edf38e5f1dc63dbfc220f62c8c273f6cb949",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/bluebird.yml"
+    },
+    {
+      "id": "blueroms",
+      "path": "definitions/blueroms.yml",
+      "sha256": "6663ae0406003301cf92e75e9f2e74b6c65dcf546712fd319c0048fc72d1caa8",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/blueroms.yml"
+    },
+    {
+      "id": "bluetorrents",
+      "path": "definitions/bluetorrents.yml",
+      "sha256": "74045063040222e48fd7cede22756050b31668d6c286a6ee2456354023448323",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/bluetorrents.yml"
+    },
+    {
+      "id": "bluraytracker",
+      "path": "definitions/bluraytracker.yml",
+      "sha256": "2f7382d3837f6aef7b66dec5b40546db717485b5650014ff1b720ebe0b66315b",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/bluraytracker.yml"
+    },
+    {
+      "id": "blutopia-api",
+      "path": "definitions/blutopia-api.yml",
+      "sha256": "9f5af3430c17727933fdb4ff001a6f21d86822b7586e030dd719f6aa40950769",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/blutopia-api.yml"
+    },
+    {
+      "id": "booktracker",
+      "path": "definitions/booktracker.yml",
+      "sha256": "f931d676ca9de769d46198df9105a0153644740fe7f4e6c0786d0ac4b199db78",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/booktracker.yml"
+    },
+    {
+      "id": "bootytape",
+      "path": "definitions/bootytape.yml",
+      "sha256": "1f5bb14f2d91ffda9d64f7b11319ec845c9c97bc9f1b67fe1b8c7c1b5e003ac6",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/bootytape.yml"
+    },
+    {
+      "id": "borgzelle",
+      "path": "definitions/borgzelle.yml",
+      "sha256": "bd995a9e95eef8a714e02dbe2b0eb8832238eaeeffad0d3f39e397d7d2a76fff",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/borgzelle.yml"
+    },
+    {
+      "id": "boxingtorrents",
+      "path": "definitions/boxingtorrents.yml",
+      "sha256": "5dab95f480000ca873b008568e42a2a4dbb318055508a0c713a8a38ba3ec5a0a",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/boxingtorrents.yml"
+    },
+    {
+      "id": "brasiltracker",
+      "path": "definitions/brasiltracker.yml",
+      "sha256": "6cfcbaebcadbb39715ab72fb6701eba36f14bba9a3d5cb7e09452506ad1b2362",
+      "sourceProject": "prowlarr-indexers",
+      "sourcePath": "definitions/v11/brasiltracker.yml"
+    },
+    {
+      "id": "btarg",
+      "path": "definitions/btarg.yml",
+      "sha256": "534fd6b06a4f372f039b11e4985fe48507376f5e924f49898f60ed1430eca184",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/btarg.yml"
+    },
+    {
+      "id": "btdirectory",
+      "path": "definitions/btdirectory.yml",
+      "sha256": "ecffd05d1e862a9d8c6ba988569c0c09dd48edad3707733c20caad2e7f185674",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/btdirectory.yml"
+    },
+    {
+      "id": "btetree",
+      "path": "definitions/btetree.yml",
+      "sha256": "20c0cad0ed04e664dd38154d8e440a429464d55f549494840cfc30c0185c351d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/btetree.yml"
+    },
+    {
+      "id": "btnext",
+      "path": "definitions/btnext.yml",
+      "sha256": "90a4ba41b6606147dac05e568592695aa2aa812a04b803f895597f6f2986cfcd",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/btnext.yml"
+    },
+    {
+      "id": "btschool",
+      "path": "definitions/btschool.yml",
+      "sha256": "93b6d3037ed5ab951f768ad5c09cc65290566f71fe881953bc1c6c00501084e7",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/btschool.yml"
+    },
+    {
+      "id": "bwtorrents",
+      "path": "definitions/bwtorrents.yml",
+      "sha256": "fae94ea28065d7eeeca4eb90325ca6fecacc736f5a736f7dd0366d4dbecf1108",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/bwtorrents.yml"
+    },
+    {
+      "id": "byrbt",
+      "path": "definitions/byrbt.yml",
+      "sha256": "4cd1d98a145ce61a3155587877afdcff7bebbab74d8105697d84764e5f7638af",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/byrbt.yml"
+    },
+    {
+      "id": "byrutor",
+      "path": "definitions/byrutor.yml",
+      "sha256": "8f01e155946c108314f6af8b42bd17639dc1049a423fec6f0e6fd618fea29926",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/byrutor.yml"
+    },
+    {
+      "id": "c411",
+      "path": "definitions/c411.yml",
+      "sha256": "79423857b56ed8e33b6bf7cc3d93de04f6530b372fd9bf3468f3bab390ba4167",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/c411.yml"
+    },
+    {
+      "id": "cangbaoge",
+      "path": "definitions/cangbaoge.yml",
+      "sha256": "aede314d1c24157bae4e80f90bd05436051393daceed1fad5eef86456bce8965",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/cangbaoge.yml"
+    },
+    {
+      "id": "capybarabr",
+      "path": "definitions/capybarabr.yml",
+      "sha256": "bf7fd7612dc3b84072f48feeec0690f38d881bf79267b5887a9f3f0421690783",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/capybarabr.yml"
+    },
+    {
+      "id": "carpathians",
+      "path": "definitions/carpathians.yml",
+      "sha256": "439710d1d0e71f4ffe231b7dd3a62d621ed7ba2bb7f3360ff0c7a6a225950b2d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/carpathians.yml"
+    },
+    {
+      "id": "carpt",
+      "path": "definitions/carpt.yml",
+      "sha256": "fe36b56a7277f2b64e0f0acc0a94e3b6ec08f3fd1c0d73204291ed70157423c1",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/carpt.yml"
+    },
+    {
+      "id": "cathoderaytube",
+      "path": "definitions/cathoderaytube.yml",
+      "sha256": "c31b7f255b6a3fd2febdfcd096aa33bd78082c1efcaebb0107a875d3572a4392",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/cathoderaytube.yml"
+    },
+    {
+      "id": "catorrent",
+      "path": "definitions/catorrent.yml",
+      "sha256": "8879c551c87c19ac779002e3dc97c7fad1d1807c81e59123a2c89855508a0b5e",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/catorrent.yml"
+    },
+    {
+      "id": "ceskeforum",
+      "path": "definitions/ceskeforum.yml",
+      "sha256": "2d6cebaef52686f04215ec0e1f31703fd67396a47256781efb214d5db4d0ad0b",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ceskeforum.yml"
+    },
+    {
+      "id": "cgpeers",
+      "path": "definitions/cgpeers.yml",
+      "sha256": "14dcccd75adc24ac15bbf3903d6fe0c3f06fbfda5878d6347296343a4be99d90",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/cgpeers.yml"
+    },
+    {
+      "id": "chdbits",
+      "path": "definitions/chdbits.yml",
+      "sha256": "e6ce3fffc495cd6e653f03628419e6f954fc0974009d511a47deafeca0ac4b55",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/chdbits.yml"
+    },
+    {
+      "id": "cinemageddon",
+      "path": "definitions/cinemageddon.yml",
+      "sha256": "94977bf5458fcee63a24d80fa2a8988007e809b4b0d46f3ad9b4d7252f6d5a55",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/cinemageddon.yml"
+    },
+    {
+      "id": "cinemamovies",
+      "path": "definitions/cinemamovies.yml",
+      "sha256": "baac1373a06e5bfcee27f0aee8f6ff8374a76238819e2405c6f06d08c2a21c82",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/cinemamovies.yml"
+    },
+    {
+      "id": "cinematik",
+      "path": "definitions/cinematik.yml",
+      "sha256": "94d8aba171ec9455888cee60aaf3fc450583d25f3aa31e56fcef90faae401637",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/cinematik.yml"
+    },
+    {
+      "id": "clearjav-api",
+      "path": "definitions/clearjav-api.yml",
+      "sha256": "2ec3a6c58735cd63ed4547ae7b357d91c5a0dab7b666a3244b9b3561d60aa3d4",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/clearjav-api.yml"
+    },
+    {
+      "id": "coastalcrew",
+      "path": "definitions/coastalcrew.yml",
+      "sha256": "dc45a1a618702426c45fbeb7a799ab12cab30dafcc5b9f1eb38ff18ff3e2b6b2",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/coastalcrew.yml"
+    },
+    {
+      "id": "comicat",
+      "path": "definitions/comicat.yml",
+      "sha256": "88f9ee35974b054f28d7ca5770cbde1084cbd53c887bfd76551580cf1ec174b0",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/comicat.yml"
+    },
+    {
+      "id": "concen",
+      "path": "definitions/concen.yml",
+      "sha256": "ecdc1d81aa98ca06000194712b276e41cad6a1f940ee2f32856f1f75cf797841",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/concen.yml"
+    },
+    {
+      "id": "concertos",
+      "path": "definitions/concertos.yml",
+      "sha256": "234d8543cbcc188677ca600f9618c9d8c9cc7f0ad46ae5554fb4602e331112a3",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/concertos.yml"
+    },
+    {
+      "id": "crabpt",
+      "path": "definitions/crabpt.yml",
+      "sha256": "a40a40c7ea01d5b39e89609f0469e2616a32173c8b2edea0529fd201c8aab43d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/crabpt.yml"
+    },
+    {
+      "id": "crackingpatching",
+      "path": "definitions/crackingpatching.yml",
+      "sha256": "21d0683f5244eaae0842fd980be4b2c829a435dcec41029f515a728680b5afc0",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/crackingpatching.yml"
+    },
+    {
+      "id": "crazyspirits-api",
+      "path": "definitions/crazyspirits-api.yml",
+      "sha256": "18b6c90f33153cd5b31ea71c5bf777b1ca3deb02a3c1353ebee0e5e2a0294700",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/crazyspirits-api.yml"
+    },
+    {
+      "id": "crnaberza",
+      "path": "definitions/crnaberza.yml",
+      "sha256": "33ecbddbe3ce9edb4e0111e06045f0a53d177f22ddfc66836ccc13f8a9000c0e",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/crnaberza.yml"
+    },
+    {
+      "id": "crnaberza2fa",
+      "path": "definitions/crnaberza2fa.yml",
+      "sha256": "0505ac522b3fba4ca0d66f401f1496b6f96241331d06f0600933d672a6601b05",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/crnaberza2fa.yml"
+    },
+    {
+      "id": "crt2fa",
+      "path": "definitions/crt2fa.yml",
+      "sha256": "0d68156301d0368303a63f5255b32a2ee77572901eb5866b8ccf23db86826c4d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/crt2fa.yml"
+    },
+    {
+      "id": "cspt",
+      "path": "definitions/cspt.yml",
+      "sha256": "99ad39492b8281a1fa5862e1eb5f86caf104dc01d1609e362baee99ece40ad65",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/cspt.yml"
+    },
+    {
+      "id": "cyanbug",
+      "path": "definitions/cyanbug.yml",
+      "sha256": "fccfaed3223ebfa99403e24a910494f38904ad97116933aa058a8575a39d3181",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/cyanbug.yml"
+    },
+    {
+      "id": "cyclingarchiveclub",
+      "path": "definitions/cyclingarchiveclub.yml",
+      "sha256": "63a179322da869f5b703f25124a4297b429f3a0e641b382b4d881649cc28edc6",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/cyclingarchiveclub.yml"
+    },
+    {
+      "id": "czteam-api",
+      "path": "definitions/czteam-api.yml",
+      "sha256": "8216e923aae61afd14b477122e1d0d7424d8ce06c7eafe74ddee6970c319ccb4",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/czteam-api.yml"
+    },
+    {
+      "id": "damagnet",
+      "path": "definitions/damagnet.yml",
+      "sha256": "f36820a2c7697b5fbe8ff0b31569638aeb9ada844d562e513686134c91e7155c",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/damagnet.yml"
+    },
+    {
+      "id": "darkpeers-api",
+      "path": "definitions/darkpeers-api.yml",
+      "sha256": "d333d27cd340a72e19d428f945b7d8a4b25d22791ce630f3545979e7249b2d43",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/darkpeers.yml"
+    },
+    {
+      "id": "dasunerwartete",
+      "path": "definitions/dasunerwartete.yml",
+      "sha256": "9f6c9a628bde686ede793177187917fed9d2e74907735721c7fe5e8a5cdfd5b3",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/dasunerwartete.yml"
+    },
+    {
+      "id": "dasunerwartete-api",
+      "path": "definitions/dasunerwartete-api.yml",
+      "sha256": "73fec26dac7b2cdc66339d9f8d46e72027b6a779bf8ba54bbc614085f9be0d97",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/dasunerwartete-api.yml"
+    },
+    {
+      "id": "datascene-api",
+      "path": "definitions/datascene-api.yml",
+      "sha256": "c8ec9f9194c8872622473d2ed094aabaebd0c99d186db4a1a7938f673c76e512",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/datascene-api.yml"
+    },
+    {
+      "id": "daxiangjiao",
+      "path": "definitions/daxiangjiao.yml",
+      "sha256": "d02f275181f7040be39627d63212acf94c9e5575432ce604ebcdc07116b622db",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/daxiangjiao.yml"
+    },
+    {
+      "id": "deildu",
+      "path": "definitions/deildu.yml",
+      "sha256": "08a3dd068bdffcb2271146badf9a18c5f946b6f154b3bc827efa982770acb343",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/deildu.yml"
+    },
+    {
+      "id": "depthstudio",
+      "path": "definitions/depthstudio.yml",
+      "sha256": "102b4e9a0eb83afaaabcd4aebe13171e8d5821d8375a46b29673ccb022e7d304",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/depthstudio.yml"
+    },
+    {
+      "id": "desitorrents-api",
+      "path": "definitions/desitorrents-api.yml",
+      "sha256": "817269ae9b7608b7e69e7660d2174ae6fa372aee820c8786e0a90b961efb48e5",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/desitorrents-api.yml"
+    },
+    {
+      "id": "devil-torrents",
+      "path": "definitions/devil-torrents.yml",
+      "sha256": "69da07fe25ab21b9fc982e12aabb62ab059c2d239e4808a893a4ce6865e64598",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/devil-torrents.yml"
+    },
+    {
+      "id": "diablotorrent",
+      "path": "definitions/diablotorrent.yml",
+      "sha256": "799d8a2bde8fc961d56b22d70829782e7ae17b380dedd845410a2ba75d610f28",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/diablotorrent.yml"
+    },
+    {
+      "id": "digitalcore-api",
+      "path": "definitions/digitalcore-api.yml",
+      "sha256": "8915c3284470dbadbc856598e8f5b6c401dcb3ecd8766ed301d15c2f2c6a60ff",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/digitalcore-api.yml"
+    },
+    {
+      "id": "dimeadozen",
+      "path": "definitions/dimeadozen.yml",
+      "sha256": "861b121a459fabd1ac0ad95fc1b94fb8eafa58b855ec5851d7325bebe8112de7",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/dimeadozen.yml"
+    },
+    {
+      "id": "discfan",
+      "path": "definitions/discfan.yml",
+      "sha256": "ca05cd81ef25555aee5ad239e810b3ec4dbce0e93f973df636b6d32516a42cf9",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/discfan.yml"
+    },
+    {
+      "id": "dmhy",
+      "path": "definitions/dmhy.yml",
+      "sha256": "1f38e7660644571b326579888a53044137b33adbb6d9aca0af1372bf48a9bdfa",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/dmhy.yml"
+    },
+    {
+      "id": "docspedia",
+      "path": "definitions/docspedia.yml",
+      "sha256": "9026067d797f7440d8d83930fd059a3451e6667f833a2cc8f6d9bf16ce56035c",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/docspedia.yml"
+    },
+    {
+      "id": "dreadvault-api",
+      "path": "definitions/dreadvault-api.yml",
+      "sha256": "d1777c88d950d664e3d0d417ce5573f4d659a38ad8abe5f7b74914e42d610e38",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/dreadvault-api.yml"
+    },
+    {
+      "id": "dreamingtree",
+      "path": "definitions/dreamingtree.yml",
+      "sha256": "6f281b76a52c33b80797088f1c7e2ad90fb48c9bdcc3a6c286264fa4eb22f4d3",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/dreamingtree.yml"
+    },
+    {
+      "id": "drugari",
+      "path": "definitions/drugari.yml",
+      "sha256": "3ec5cf1bab065dbc17b6b4d48c769cfb74695780ee12cc57dbb0c177e42d9e4b",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/drugari.yml"
+    },
+    {
+      "id": "ds-reloaded",
+      "path": "definitions/ds-reloaded.yml",
+      "sha256": "0a5f83c589bc3630648f46a9ea1746666f2e600885e7b64fa1837ecfbd66a1b1",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ds-reloaded.yml"
+    },
+    {
+      "id": "dubhe",
+      "path": "definitions/dubhe.yml",
+      "sha256": "f47d9f68b10ba11a5ab877135e917a80103df1362549a4b5ce0aa732d99e432e",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/dubhe.yml"
+    },
+    {
+      "id": "dxp",
+      "path": "definitions/dxp.yml",
+      "sha256": "dee7d3e6ef40633707a6f918c151d650e090962f1bc649e564d00cb3e0d605c5",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/dxp.yml"
+    },
+    {
+      "id": "ebookbay",
+      "path": "definitions/ebookbay.yml",
+      "sha256": "8c452df5f2dde4152dd4123d9483c5aa8a9283812685c73031e07942c763f1ed",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ebookbay.yml"
+    },
+    {
+      "id": "ebooks-shares",
+      "path": "definitions/ebooks-shares.yml",
+      "sha256": "24f78011d73017ca3bdac6910634377fdd4c7a477d10b825be1737bc10d2bb6b",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ebooks-shares.yml"
+    },
+    {
+      "id": "ehentai",
+      "path": "definitions/ehentai.yml",
+      "sha256": "0a8a4c4f7fca57c69abe247ea25222dde755468ec18e61165f48b112030657e7",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ehentai.yml"
+    },
+    {
+      "id": "electro-torrent",
+      "path": "definitions/electro-torrent.yml",
+      "sha256": "8d2bbd26a6f2d437d8fa55ae75ee936a9c54bd1cf5bf89bf393f82d39f5e2926",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/electro-torrent.yml"
+    },
+    {
+      "id": "empornium",
+      "path": "definitions/empornium.yml",
+      "sha256": "c8fc751637aac0c1aa89424824fbe5ab1c62cda1478deb62a4872defbc2b25bc",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/empornium.yml"
+    },
+    {
+      "id": "empornium2fa",
+      "path": "definitions/empornium2fa.yml",
+      "sha256": "607222a76e4c104984fb1823846cb7427b0c801aa79441cc5ed3f291aff21bc0",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/empornium2fa.yml"
+    },
+    {
+      "id": "emuwarez",
+      "path": "definitions/emuwarez.yml",
+      "sha256": "381f078ded5dbedfe3316ec629304c23fccd709b9d6b8c8f3798a195070ff399",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/emuwarez.yml"
+    },
+    {
+      "id": "estone",
+      "path": "definitions/estone.yml",
+      "sha256": "568b1634472b9ba8caf30a6f8bed10253816fdcf80770e9e70b522f10b1d44fa",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/estone.yml"
+    },
+    {
+      "id": "ex-torrenty",
+      "path": "definitions/ex-torrenty.yml",
+      "sha256": "f511a645d13da77bb49596d5c0d4d5515ba3c98ca2f16fd9ecc5609c05922145",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ex-torrenty.yml"
+    },
+    {
+      "id": "exitorrent-org",
+      "path": "definitions/exitorrent-org.yml",
+      "sha256": "8c1984ee1d60ac9df908376faed209bcbc61fdd06c9aca7e935f6f081d23b56a",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/exitorrent-org.yml"
+    },
+    {
+      "id": "exkinoray",
+      "path": "definitions/exkinoray.yml",
+      "sha256": "10cbdfeb785229b588571fa3ec0d1ee1308a0ec58757621ab303a746ecf3bfb4",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/exkinoray.yml"
+    },
+    {
+      "id": "explosiv-world",
+      "path": "definitions/explosiv-world.yml",
+      "sha256": "4ef6898b894b03abd41f6e59873358d39455c1976827ea6f6251e4aecf90e64d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/explosiv-world.yml"
+    },
+    {
+      "id": "extratorrent-st",
+      "path": "definitions/extratorrent-st.yml",
+      "sha256": "3901336e8939bc3c34b3b113b06d7177c8a011a34c3faca04afb45ea3c072652",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/extratorrent-st.yml"
+    },
+    {
+      "id": "extremebits",
+      "path": "definitions/extremebits.yml",
+      "sha256": "d14691b925a1895091b07220e5f735e67926d9cc5a7b4a8897e79cfc9ef1e89a",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/extremebits.yml"
+    },
+    {
+      "id": "eztv",
+      "path": "definitions/eztv.yml",
+      "sha256": "827f2f5dc1b56d816176b097bc5c13f28b5407125199c1954646f1b513dbb87c",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/eztv.yml"
+    },
+    {
+      "id": "eztvl",
+      "path": "definitions/eztvl.yml",
+      "sha256": "e61502d390193569062bf3a3e3f2f7cb59501ceff853e7ec2491daea7c48bbb3",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/eztvl.yml"
+    },
+    {
+      "id": "f1carreras-api",
+      "path": "definitions/f1carreras-api.yml",
+      "sha256": "571d1f04188e3c47c827e9479dc56947836e5190e5fb8c58438bae4dfa20c62f",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/f1carreras-api.yml"
+    },
+    {
+      "id": "f1gp",
+      "path": "definitions/f1gp.yml",
+      "sha256": "45eacc36d72736aa660f4ed731e2bfe409c7e8eedf383ba0a44554ae89c075ca",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/f1gp.yml"
+    },
+    {
+      "id": "fanoin",
+      "path": "definitions/fanoin.yml",
+      "sha256": "8d328fe2e9673875c56cdc6d0ceb048c6f3b6fdbc5c9c15347cf56e7cf548659",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/fanoin.yml"
+    },
+    {
+      "id": "fappaizuri",
+      "path": "definitions/fappaizuri.yml",
+      "sha256": "46ccee10fdf8c49de4695bdedab5d6720200bdd8d47ee203cb97f4ec31767cfb",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/fappaizuri.yml"
+    },
+    {
+      "id": "fappaizuri2fa",
+      "path": "definitions/fappaizuri2fa.yml",
+      "sha256": "984a451782633af4d2e71499a96f7e0d67470fd8b4cc6a539d4f58dc4687b410",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/fappaizuri2fa.yml"
+    },
+    {
+      "id": "femdomcult",
+      "path": "definitions/femdomcult.yml",
+      "sha256": "ba8dfc88ce9641424f5f18a6588cf499d7b1af490fdf21cf6faa44f7056e8de1",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/femdomcult.yml"
+    },
+    {
+      "id": "fenyarnyek-tracker",
+      "path": "definitions/fenyarnyek-tracker.yml",
+      "sha256": "36e01d81740a013623e563a4263483d2ddf4d66527f60dac341e920c8bdf39ce",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/fenyarnyek-tracker.yml"
+    },
+    {
+      "id": "file-tracker",
+      "path": "definitions/file-tracker.yml",
+      "sha256": "e3d680f75b00fa006ce66fd0d1b76144b740e2903b138264d4e6616e9673bb18",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/file-tracker.yml"
+    },
+    {
+      "id": "filemood",
+      "path": "definitions/filemood.yml",
+      "sha256": "5a5ba1585dd0c7110e156eb6e0edb51d11e5fbb474b7f31f89faa5d41a7b2e6c",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/filemood.yml"
+    },
+    {
+      "id": "finelite",
+      "path": "definitions/finelite.yml",
+      "sha256": "0617acd4ea127f04ae98d3ff3b363fcfb3de2f9fdad116d02e2987ed4a961bfb",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/finelite.yml"
+    },
+    {
+      "id": "flood",
+      "path": "definitions/flood.yml",
+      "sha256": "b1b50d6e5667596070e6d151de9412b4e58afdcf48b6ebbf9080623acab26d1e",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/flood.yml"
+    },
+    {
+      "id": "freefarm",
+      "path": "definitions/freefarm.yml",
+      "sha256": "dba92d2a3f5e6cb108ffe6db682032041ab487a7c6fcaf7cfc426ed68c8bcd95",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/freefarm.yml"
+    },
+    {
+      "id": "freejavtorrent",
+      "path": "definitions/freejavtorrent.yml",
+      "sha256": "29ef23158ccfdd33deee69f1496bb6aad16948356ed708d165223b470a290aa9",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/freejavtorrent.yml"
+    },
+    {
+      "id": "funfile",
+      "path": "definitions/funfile.yml",
+      "sha256": "45b1bd32b76f038226816d3ccb85a972c5aa0d1bed7153c53d8b66593686d4d0",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/funfile.yml"
+    },
+    {
+      "id": "funzone-api",
+      "path": "definitions/funzone-api.yml",
+      "sha256": "192bb90400299ecfa6071adaf4a44addb2b3ce37b3692d26f6eddf573351fa22",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/funzone-api.yml"
+    },
+    {
+      "id": "futuretorrent",
+      "path": "definitions/futuretorrent.yml",
+      "sha256": "f0a9d43080ab8c8eb3ade64d975b08d96891488a07017c8bd92bdbaf198dbc53",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/futuretorrent.yml"
+    },
+    {
+      "id": "fuzer",
+      "path": "definitions/fuzer.yml",
+      "sha256": "914a6896d95ba1c611eaa8803a9bc423cda14f8c5d8b112bfa1d210c17b77306",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/fuzer.yml"
+    },
+    {
+      "id": "g3minitr4ck3r-api",
+      "path": "definitions/g3minitr4ck3r-api.yml",
+      "sha256": "b245605cce27edd925077ecb13d0c6969e906af380870d8b144ae32aaa3174e5",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/g3minitr4ck3r-api.yml"
+    },
+    {
+      "id": "gamestorrents",
+      "path": "definitions/gamestorrents.yml",
+      "sha256": "4c08e3cf3b22f058474ddb2acea52b948766b887021cca9255fecac3f042c47e",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/gamestorrents.yml"
+    },
+    {
+      "id": "gay-torrents",
+      "path": "definitions/gay-torrents.yml",
+      "sha256": "3dbc08e5e0a6c66e39424d54a992af41c4cf3f9af8984a3dab0e0431a9889d43",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/gay-torrents.yml"
+    },
+    {
+      "id": "gaytorrentru",
+      "path": "definitions/gaytorrentru.yml",
+      "sha256": "613d466d3e277e65eb4f74d2fdcb567767cedddf63c9da87fc042cb1e59a9f71",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/gaytorrentru.yml"
+    },
+    {
+      "id": "generationfree-api",
+      "path": "definitions/generationfree-api.yml",
+      "sha256": "81a4395cf7e3916f333244ecafb7aa34548f87fc9b478df26d1ab186b24dba5c",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/generationfree-api.yml"
+    },
+    {
+      "id": "ggpt",
+      "path": "definitions/ggpt.yml",
+      "sha256": "07f9ff53e9fa5800112241f441ccc7d9da90f2d9e1d1e2e240ceacb89f8134cb",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ggpt.yml"
+    },
+    {
+      "id": "gigatorrents",
+      "path": "definitions/gigatorrents.yml",
+      "sha256": "caa1b21a6ccf6becc3fe1adc99f62506f1aa70ae95aabde6e36d80878abd4036",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/gigatorrents.yml"
+    },
+    {
+      "id": "girotorrent",
+      "path": "definitions/girotorrent.yml",
+      "sha256": "43b6dc1902e9d528bcc879a1be099deebb6c35640fdc7c109df5d66f286ef628",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/girotorrent.yml"
+    },
+    {
+      "id": "haidan",
+      "path": "definitions/haidan.yml",
+      "sha256": "0eadd913574238a65bf3f4d8e62e6706542a1803ef3ad90d10b65e5aee1c4ee4",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/haidan.yml"
+    },
+    {
+      "id": "haitang",
+      "path": "definitions/haitang.yml",
+      "sha256": "10a36cf0d912f7bc8aa6f50aca8b35e767329832f68525d9ff05541899d1393d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/haitang.yml"
+    },
+    {
+      "id": "happyfappy",
+      "path": "definitions/happyfappy.yml",
+      "sha256": "9ab23a94e56017ed3813cccc0472fe10625d4ff6a06cec0e284b614a1e0c9b38",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/happyfappy.yml"
+    },
+    {
+      "id": "happyfappy2fa",
+      "path": "definitions/happyfappy2fa.yml",
+      "sha256": "c8fedcb2570ee70296c4df4c2abe012ff8309e709fda83657078674791f23e81",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/happyfappy2fa.yml"
+    },
+    {
+      "id": "hawke-uno",
+      "path": "definitions/hawke-uno.yml",
+      "sha256": "91e6ee238dc5c2f8ce99d1ad6b32eca21c88d2838503194d1137b1fbf610b876",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hawke-uno.yml"
+    },
+    {
+      "id": "hd-club",
+      "path": "definitions/hd-club.yml",
+      "sha256": "4e706b2d03b144419a529a418ba59db40fdb408b9d5c180a7cea1f1f96556a1e",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hd-club.yml"
+    },
+    {
+      "id": "hd-unit3d-api",
+      "path": "definitions/hd-unit3d-api.yml",
+      "sha256": "093fa131be0e3f5e569ce098b59aaed89e6c69ae16ffb03e5ab550a1e671f390",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hd-unit3d-api.yml"
+    },
+    {
+      "id": "hdarea",
+      "path": "definitions/hdarea.yml",
+      "sha256": "e1f273c2aa77c23dc4ac2b689612a67fad4bf8ded4b3edfd4db98a21fbb23e74",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hdarea.yml"
+    },
+    {
+      "id": "hdbao",
+      "path": "definitions/hdbao.yml",
+      "sha256": "db424a5c6d4632f0152936075883e843c924221b999ebb29ba7d684d574763ca",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hdbao.yml"
+    },
+    {
+      "id": "hdc",
+      "path": "definitions/hdc.yml",
+      "sha256": "4c911da2cf59a5f1e4ab6b15ba1baa52bc3d26c907067b4d4a4aab7a29e20a50",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hdc.yml"
+    },
+    {
+      "id": "hdclone",
+      "path": "definitions/hdclone.yml",
+      "sha256": "55619468fd42bad958d06a0860268bd863fae302921c602f12903af3f02d06d2",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hdclone.yml"
+    },
+    {
+      "id": "hddolby",
+      "path": "definitions/hddolby.yml",
+      "sha256": "263fbcdcdbe5e6477e11775ae92388d7e3264bb8a920a972fe6b7abe8a50a31a",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hddolby.yml"
+    },
+    {
+      "id": "hdfans",
+      "path": "definitions/hdfans.yml",
+      "sha256": "c29345c2ba61c1c6cad92b1b6c5c89633e7dba9e2c71d0a88437f3822ff82e0d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hdfans.yml"
+    },
+    {
+      "id": "hdforever",
+      "path": "definitions/hdforever.yml",
+      "sha256": "ef40604203504510a6d6ab9b716e7b1bcfdd631385b45db865bfb6c5acdc0997",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hdforever.yml"
+    },
+    {
+      "id": "hdforever2fa",
+      "path": "definitions/hdforever2fa.yml",
+      "sha256": "3b90f111e56e5977e6a01c5d228486a86215d6de2c2a0dc7ed1d4887d3a0340e",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hdforever2fa.yml"
+    },
+    {
+      "id": "hdgalaktik",
+      "path": "definitions/hdgalaktik.yml",
+      "sha256": "86adb580f0765ebd01b27531ece45fba88d43b79b84694e8f459f0984d511f66",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hdgalaktik.yml"
+    },
+    {
+      "id": "hdhome",
+      "path": "definitions/hdhome.yml",
+      "sha256": "65e9001c685d00e245f04d50037030e51da18562434deb84b1d7395b8b78659f",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hdhome.yml"
+    },
+    {
+      "id": "hdkylin",
+      "path": "definitions/hdkylin.yml",
+      "sha256": "198fc832b886eeaed2cd199010a095f6048118a30522d0da99d49fba3fd4c8d5",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hdkylin.yml"
+    },
+    {
+      "id": "hdolimpo-api",
+      "path": "definitions/hdolimpo-api.yml",
+      "sha256": "ee08111398ab03b5674689cb843d9333b5b25f7a20ae52c56528a1ff7b531a3e",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hdolimpo-api.yml"
+    },
+    {
+      "id": "hdonly-api",
+      "path": "definitions/hdonly-api.yml",
+      "sha256": "7d8d8d210cd0f5ef933aed9760f22c599676a9d4e1af57c26c7bfc61b5e8a0ec",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hdonly-api.yml"
+    },
+    {
+      "id": "hdroute",
+      "path": "definitions/hdroute.yml",
+      "sha256": "499f26b629e58277ff778516277e82fcace9dc28650f903520abd2a027ae2864",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hdroute.yml"
+    },
+    {
+      "id": "hdsky",
+      "path": "definitions/hdsky.yml",
+      "sha256": "4151b6b0a46ae305eaef4c12cb61c81319a23e6897ce4f596a42c4bb2ddf2bc9",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hdsky.yml"
+    },
+    {
+      "id": "hdspace",
+      "path": "definitions/hdspace.yml",
+      "sha256": "ef013bb397e560215f413ddafb6c7faff7001a096eb88a9f04fe8a317f4b7b52",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hdspace.yml"
+    },
+    {
+      "id": "hdspacecookie",
+      "path": "definitions/hdspacecookie.yml",
+      "sha256": "d90f778fa30518457de6869a9db9f856ecf6707b9cfc645ae16341bf54fe398c",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hdspacecookie.yml"
+    },
+    {
+      "id": "hdtime",
+      "path": "definitions/hdtime.yml",
+      "sha256": "f2cfb4fc5addf797544d7beb0574b21d2e79cee910b1441540553928cac24b5b",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hdtime.yml"
+    },
+    {
+      "id": "hdtorrents",
+      "path": "definitions/hdtorrents.yml",
+      "sha256": "10a9bac8b996c37a29986ae624ec404fb3e20f53c2723d15fc437d2ee1b69759",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hdtorrents.yml"
+    },
+    {
+      "id": "hdtorrentsit",
+      "path": "definitions/hdtorrentsit.yml",
+      "sha256": "b1f066daf886679a098a0d2ab5e360710a72e3c9b5377f52660c29b87a25bfd0",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hdtorrentsit.yml"
+    },
+    {
+      "id": "hdturk",
+      "path": "definitions/hdturk.yml",
+      "sha256": "3052508633242577ba6d16905e2940c35d82a96ad783111b158e35ba14e71f0b",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hdturk.yml"
+    },
+    {
+      "id": "hdu",
+      "path": "definitions/hdu.yml",
+      "sha256": "d5eb1d4d4937e828d5c3ecb4d05c7092fe974d6e2bd4d7244129379672c29853",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hdu.yml"
+    },
+    {
+      "id": "hdvideo",
+      "path": "definitions/hdvideo.yml",
+      "sha256": "249b54333961fb866014504f952dbdb2485d3559217347cdfa9f793fefdb04bb",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hdvideo.yml"
+    },
+    {
+      "id": "hdzero-api",
+      "path": "definitions/hdzero-api.yml",
+      "sha256": "498fe1f140309a57d8bf05c4646ab0dd3aed296c251a4badcbe704233966cef8",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hdzero.yml"
+    },
+    {
+      "id": "hebits",
+      "path": "definitions/hebits.yml",
+      "sha256": "8c62e4dcccd2ffd28e46bbeb2a0a69b2cbff28cc998e31cea8934b734a8dbd23",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hebits.yml"
+    },
+    {
+      "id": "hellashut",
+      "path": "definitions/hellashut.yml",
+      "sha256": "461f4981b25c334f5317b98d9e442bbb83e2d914750a497643e2767c7696000d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hellashut.yml"
+    },
+    {
+      "id": "hellashut-api",
+      "path": "definitions/hellashut-api.yml",
+      "sha256": "75e3ec19f6d1f7465d862a4a571e2297d74adccc8e18ced94641e124b0ea1f33",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hellashut-api.yml"
+    },
+    {
+      "id": "hellenic-hd-api",
+      "path": "definitions/hellenic-hd-api.yml",
+      "sha256": "4d66ffa9290dabe75ddf12072d129f68a231fe5103ee97bb03e10c9dd6ce11bd",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hellenic-hd-api.yml"
+    },
+    {
+      "id": "helltorrents",
+      "path": "definitions/helltorrents.yml",
+      "sha256": "d33cc48154d069a270788779538bb96dc37616f034adecf73eed64819bed5439",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/helltorrents.yml"
+    },
+    {
+      "id": "herobit",
+      "path": "definitions/herobit.yml",
+      "sha256": "11e0ce0a08c275bb3b70a0b13887ffbf90d15097c8189a08e06ab28adecababd",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/herobit.yml"
+    },
+    {
+      "id": "hhanclub",
+      "path": "definitions/hhanclub.yml",
+      "sha256": "c656941b24136edae13581728d4820553f724d99412abcd98c2be22a255df1c8",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hhanclub.yml"
+    },
+    {
+      "id": "hhd-api",
+      "path": "definitions/hhd-api.yml",
+      "sha256": "9d3e755d129385935d2424e969e6fbe67d30cf862c5d9e7e5970ea8ea975613e",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hhd-api.yml"
+    },
+    {
+      "id": "houseofdevil",
+      "path": "definitions/houseofdevil.yml",
+      "sha256": "0f9ce3f242836081bd49e9dacf76e345a67d6d5dd98c2a054fdfdaf69f310987",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/houseofdevil.yml"
+    },
+    {
+      "id": "hqmusic",
+      "path": "definitions/hqmusic.yml",
+      "sha256": "c75e984f384240fb9ab36b03d64320c7efac2980bb1ec0b3ffa353cc13dbd435",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hqmusic.yml"
+    },
+    {
+      "id": "hudbt",
+      "path": "definitions/hudbt.yml",
+      "sha256": "819351af2e0f446714867e0c5c085f1aa8276551432b12e851bd4851b3da7448",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hudbt.yml"
+    },
+    {
+      "id": "huntorrent",
+      "path": "definitions/huntorrent.yml",
+      "sha256": "b53d15f97a4c9025341c009f08768f1adb49cb10605cb1614889d2f83c4efd1b",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/huntorrent.yml"
+    },
+    {
+      "id": "hxpt",
+      "path": "definitions/hxpt.yml",
+      "sha256": "119478b309aa8d17d21185ff953ed2c32b99afcffc582e7a73ae78b9cf512003",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/hxpt.yml"
+    },
+    {
+      "id": "ilcorsaroblu",
+      "path": "definitions/ilcorsaroblu.yml",
+      "sha256": "524550d2209d02d2ff7a28d4b4adc243b14de20a405c6186c3ea56d625f1dd72",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ilcorsaroblu.yml"
+    },
+    {
+      "id": "ildragonero",
+      "path": "definitions/ildragonero.yml",
+      "sha256": "51ac0727869e0def28c826598f2be28d5d142a33c7af8f6f99aad434d62a2a2f",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ildragonero.yml"
+    },
+    {
+      "id": "immortuos",
+      "path": "definitions/immortuos.yml",
+      "sha256": "edad7325919dc20b440a1bbc1eefa00ee5436bd03f6de5220f8f56d17f968a4a",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/immortuos.yml"
+    },
+    {
+      "id": "indietorrents",
+      "path": "definitions/indietorrents.yml",
+      "sha256": "0d7681d3298dd00e7254959c107a1154f50ea6848a061af820f8c0f3febb9025",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/indietorrents.yml"
+    },
+    {
+      "id": "infinityhd-api",
+      "path": "definitions/infinityhd-api.yml",
+      "sha256": "03d8b531591a82ac99294045e29c1ee1101caf60b099b26e8057fd444bc3eaef",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/infinityhd-api.yml"
+    },
+    {
+      "id": "infire",
+      "path": "definitions/infire.yml",
+      "sha256": "cd4141cac72d4248c25c86e6586d06435fda8e20eb93cb7abbebbb2f9b64fc3d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/infire.yml"
+    },
+    {
+      "id": "insanetracker",
+      "path": "definitions/insanetracker.yml",
+      "sha256": "ec50fa3049885d9627128c16b466091de86dca54b08de03c4abdea25c5c7edf3",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/insanetracker.yml"
+    },
+    {
+      "id": "internetarchive",
+      "path": "definitions/internetarchive.yml",
+      "sha256": "38892ccb813cd0ad6723e2db5cd936f6950d2427389addc6b7210b1f0fd76f7f",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/internetarchive.yml"
+    },
+    {
+      "id": "itatorrents",
+      "path": "definitions/itatorrents.yml",
+      "sha256": "c01c44789169daac78f783df6488286d5fec7fff95d6165923102815040e0962",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/itatorrents.yml"
+    },
+    {
+      "id": "jme-reunit3d-api",
+      "path": "definitions/jme-reunit3d-api.yml",
+      "sha256": "10bab03ee6707624b1c098ca2fbe89f2e4b7fdaf5040aa1d3d35a8a42dbe5203",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/jme-reunit3d-api.yml"
+    },
+    {
+      "id": "jpopsuki",
+      "path": "definitions/jpopsuki.yml",
+      "sha256": "34d9d5e082d7d80090fd5071181b9eb3adb412ad78e155ee5334cb696424f619",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/jpopsuki.yml"
+    },
+    {
+      "id": "jptv4us-api",
+      "path": "definitions/jptv4us-api.yml",
+      "sha256": "4e54c06c61a7a324c404722265adbf0d43a6178966636a3560f4d393824bd390",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/jptv4us-api.yml"
+    },
+    {
+      "id": "kamept",
+      "path": "definitions/kamept.yml",
+      "sha256": "1f4637e863e3c63ffccee182f7f6d28ed7d25265d837f008bd17e7b3ac66d938",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/kamept.yml"
+    },
+    {
+      "id": "karagarga",
+      "path": "definitions/karagarga.yml",
+      "sha256": "19a34e1e80e589220622223aeb0e9940ef4fa50c50d5d586073522e5bc85c521",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/karagarga.yml"
+    },
+    {
+      "id": "keepfriends",
+      "path": "definitions/keepfriends.yml",
+      "sha256": "7ce00ce9df373ca00c4fb6e37de961a8da54a9b50e3cd941a2a4166b1cf01597",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/keepfriends.yml"
+    },
+    {
+      "id": "kelu",
+      "path": "definitions/kelu.yml",
+      "sha256": "59e8431af0cf8f66e8f4605ad5f78c4411056c7271c1b5ca6562686d03741b18",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/kelu.yml"
+    },
+    {
+      "id": "kickasstorrents-to",
+      "path": "definitions/kickasstorrents-to.yml",
+      "sha256": "615347289c2606e98760082303fa6b7fa105ff681d69624bde8c31a0d1e8c634",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/kickasstorrents-to.yml"
+    },
+    {
+      "id": "kickasstorrents-ws",
+      "path": "definitions/kickasstorrents-ws.yml",
+      "sha256": "6aca5e5e2257970596220f2c020d58bcaef2d9cf424a9a0835b55bde7e8f5d86",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/kickasstorrents-ws.yml"
+    },
+    {
+      "id": "kinorun",
+      "path": "definitions/kinorun.yml",
+      "sha256": "dc686601393e8b0c3752f02c8155ff8deee1ffd5ade455ffb9a7121a0528e9f7",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/kinorun.yml"
+    },
+    {
+      "id": "kinozal",
+      "path": "definitions/kinozal.yml",
+      "sha256": "45695a17470608cdd45f012f9fc84f65ef7c8c70fdfbe1ccd869199f9249c7c9",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/kinozal.yml"
+    },
+    {
+      "id": "kinozal-magnet",
+      "path": "definitions/kinozal-magnet.yml",
+      "sha256": "0edccc5f0cbca4a96a06436d101bf77d8cd3d9d54223ca7de9f5d897aeb001de",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/kinozal-magnet.yml"
+    },
+    {
+      "id": "korsar",
+      "path": "definitions/korsar.yml",
+      "sha256": "7c23acfab2c2eb7b73a09b48075638df5a44418764896798779009b3714ac1f8",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/korsar.yml"
+    },
+    {
+      "id": "krazyzone",
+      "path": "definitions/krazyzone.yml",
+      "sha256": "88f2d57ac148031a088cbdbda4dd52afe18195a6c1c8d43148d315218be8d335",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/krazyzone.yml"
+    },
+    {
+      "id": "kufei",
+      "path": "definitions/kufei.yml",
+      "sha256": "059413703a7e5b068e9e69a3e5adf1a8be172ac53d5e5d7071cfad7e9265ef19",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/kufei.yml"
+    },
+    {
+      "id": "kufirc",
+      "path": "definitions/kufirc.yml",
+      "sha256": "671cbbddd0496281031e0269a2d3bf7a3199610e91f7e299ae1cec3832ab1b54",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/kufirc.yml"
+    },
+    {
+      "id": "kufirc2fa",
+      "path": "definitions/kufirc2fa.yml",
+      "sha256": "2dee7374faf548de37e624875aa2289ca191f399e1d249d49673b293d1eb9298",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/kufirc2fa.yml"
+    },
+    {
+      "id": "lajidui",
+      "path": "definitions/lajidui.yml",
+      "sha256": "1bea2fd68c04cc99cbd69f49a68d426dcdfa6dd104472c7eabe6ab595f8da2a9",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/lajidui.yml"
+    },
+    {
+      "id": "lastdigitalunderground",
+      "path": "definitions/lastdigitalunderground.yml",
+      "sha256": "c58b7972c62c1144869807bdf86cb503f47ab741faeaffbd2497be69445dc522",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/lastdigitalunderground.yml"
+    },
+    {
+      "id": "lastfiles",
+      "path": "definitions/lastfiles.yml",
+      "sha256": "f6cfadb40d78847c2957d2ca04f76a212487ca68e6449e6c866ab90f4e75d16d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/lastfiles.yml"
+    },
+    {
+      "id": "lat-team-api",
+      "path": "definitions/lat-team-api.yml",
+      "sha256": "f188ccd04a4e51d7fb2ea11a248ea936f45d3bdd939b9d6f49db9dbf1ac43b14",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/lat-team-api.yml"
+    },
+    {
+      "id": "learnflakes",
+      "path": "definitions/learnflakes.yml",
+      "sha256": "f3b4567caeb3f0877b1a156f7b570f958ca099cd02634ffd41b8c9c95f039f5d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/learnflakes.yml"
+    },
+    {
+      "id": "leech24",
+      "path": "definitions/leech24.yml",
+      "sha256": "db9ff167a9bc41f9db86bd3886321c5e3c2c0d7d4eb01cb29b81126c149d0daf",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/leech24.yml"
+    },
+    {
+      "id": "lemonhd-net",
+      "path": "definitions/lemonhd-net.yml",
+      "sha256": "2cec498220947d17b1bab22ca8cf50bf8a2d6de6cd63d51ece852c21abc79bd3",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/lemonhd-net.yml"
+    },
+    {
+      "id": "lesaloon",
+      "path": "definitions/lesaloon.yml",
+      "sha256": "556557bae7d2a10ebc826ab147fd52696c5254a9b180966e472ad3afb92c01a5",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/lesaloon.yml"
+    },
+    {
+      "id": "letseed",
+      "path": "definitions/letseed.yml",
+      "sha256": "c68b9d3c49b9ece226c304c5ff8b22da8e10dda383760cecd77e1970dd381488",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/letseed.yml"
+    },
+    {
+      "id": "libranet",
+      "path": "definitions/libranet.yml",
+      "sha256": "2840d336ee106700255f0e80402b009bd3f55f24a7cb7dd17efb02314e057ee8",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/libranet.yml"
+    },
+    {
+      "id": "limetorrents",
+      "path": "definitions/limetorrents.yml",
+      "sha256": "453ca890a9d848af76f1c6aa343921cb57ea3c4d8391d6cf8754056810e62e41",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/limetorrents.yml"
+    },
+    {
+      "id": "linkomanija",
+      "path": "definitions/linkomanija.yml",
+      "sha256": "96e9069e93d7665f56fe12c5ce806a86133d5f7beae75c06d0a52e0ab79005ef",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/linkomanija.yml"
+    },
+    {
+      "id": "linuxtracker",
+      "path": "definitions/linuxtracker.yml",
+      "sha256": "7a53ceed8f76f32d639a82c241299d0e3126efb651a3f7dc67706585455f39ea",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/linuxtracker.yml"
+    },
+    {
+      "id": "locadora",
+      "path": "definitions/locadora.yml",
+      "sha256": "f79edb8c73d2bf3527c6c5f5fb9b08cb62bb8b8782edd6794e4719fd05660058",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/locadora.yml"
+    },
+    {
+      "id": "longpt",
+      "path": "definitions/longpt.yml",
+      "sha256": "1a2b3ed2ec903710b2c627c5bcfc2616932d6b706ef7591d48a17ec28222e3ef",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/longpt.yml"
+    },
+    {
+      "id": "losslessclub",
+      "path": "definitions/losslessclub.yml",
+      "sha256": "3b64cdffccfdcc7124218bcf0ebd27cb46ea488db62a7064ca83ec2bdf365cf1",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/losslessclub.yml"
+    },
+    {
+      "id": "lp-bits",
+      "path": "definitions/lp-bits.yml",
+      "sha256": "d98bc6015a661ccc608407b59c1e9db2f64952e42b9621caccbdaa4488c6966a",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/lp-bits.yml"
+    },
+    {
+      "id": "lst",
+      "path": "definitions/lst.yml",
+      "sha256": "d6874f4292dd36892e91afa398af55a37d10bdf12e46d140fbf7357b0cd7866a",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/lst.yml"
+    },
+    {
+      "id": "luckpt",
+      "path": "definitions/luckpt.yml",
+      "sha256": "582f9bc216016948bfa64ff897d2296742f66004c1af9206ad6e9eba40521ac7",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/luckpt.yml"
+    },
+    {
+      "id": "luminarr-api",
+      "path": "definitions/luminarr-api.yml",
+      "sha256": "e00f7f2b0eeb06b50589b91a3c0adb47ca61357f5b7a0b7e658e53d4d716cc99",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/luminarr-api.yml"
+    },
+    {
+      "id": "mactorrentsdownload",
+      "path": "definitions/mactorrentsdownload.yml",
+      "sha256": "990bb1bf23232a30cc25913b0f62090ee009e063c598246a78a43201fd169b3c",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/mactorrentsdownload.yml"
+    },
+    {
+      "id": "madsrevolution",
+      "path": "definitions/madsrevolution.yml",
+      "sha256": "d4a2cb1e94696a9a70b381bb7e864179aed01fda797bdbf4701ed78f75f6b85a",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/madsrevolution.yml"
+    },
+    {
+      "id": "magico",
+      "path": "definitions/magico.yml",
+      "sha256": "a843e177fde7ae4482b194789e9a1ca8ddd8f1462b654e2265cb84ecc43ddbf8",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/magico.yml"
+    },
+    {
+      "id": "magnetcat",
+      "path": "definitions/magnetcat.yml",
+      "sha256": "1ddf39c47c10ca6f1122461a680df271b687dd1a9568b648ac73b678cc672bc1",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/magnetcat.yml"
+    },
+    {
+      "id": "magnetdownload",
+      "path": "definitions/magnetdownload.yml",
+      "sha256": "46af5f2a085ac39db11158bae235778ff1a02f4b7abb14572a3258c9631ea292",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/magnetdownload.yml"
+    },
+    {
+      "id": "magnetz",
+      "path": "definitions/magnetz.yml",
+      "sha256": "d3b4066220c2088fddd2f4e65b683b45ec1170f10b67d9c772e3d396bc0ab5f4",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/magnetz.yml"
+    },
+    {
+      "id": "majomparade",
+      "path": "definitions/majomparade.yml",
+      "sha256": "4976ac697c5ddaa449fdb6dd17178c25e1625b1fcadde2f07b84a87b4f8214df",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/majomparade.yml"
+    },
+    {
+      "id": "makingoff",
+      "path": "definitions/makingoff.yml",
+      "sha256": "e3427cfdf67b5206fc7439010399e69cb0ef4c2027e709e412c71f5dfc0c71e4",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/makingoff.yml"
+    },
+    {
+      "id": "malayabits-api",
+      "path": "definitions/malayabits-api.yml",
+      "sha256": "5ff30654759712cfe04a73242f78c766c0a99a70772fd7053f8f7857d71f7b16",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/malayabits-api.yml"
+    },
+    {
+      "id": "march",
+      "path": "definitions/march.yml",
+      "sha256": "e8d9f044fdffaf0fa2060bdafc9e41a7dff9580833ed16fd4ca5f01ffc8823b6",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/march.yml"
+    },
+    {
+      "id": "marinetracker",
+      "path": "definitions/marinetracker.yml",
+      "sha256": "69010fc94427c2be334bb43bcee1f88c5aa7b74545f5955402956da200837e62",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/marinetracker.yml"
+    },
+    {
+      "id": "matrix",
+      "path": "definitions/matrix.yml",
+      "sha256": "a0de659776fc2dbcb75d92b2324206a7c6d803ce9735df5a4bb160fff79959b4",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/matrix.yml"
+    },
+    {
+      "id": "mazepa",
+      "path": "definitions/mazepa.yml",
+      "sha256": "1b20df7a9e3205c0e7b7e6d71f5bfb862be8ced057f10720b6a465f85d262330",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/mazepa.yml"
+    },
+    {
+      "id": "mdan",
+      "path": "definitions/mdan.yml",
+      "sha256": "1a4fb6f89e7fef2f6ff3e6e7e564b7a70f6bad8186502f57a2f3d60c00513938",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/mdan.yml"
+    },
+    {
+      "id": "megapeer",
+      "path": "definitions/megapeer.yml",
+      "sha256": "52f4bab0f3b6df2ec0318e9472738c4ad2807fa743319244fd84aeca1583b150",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/megapeer.yml"
+    },
+    {
+      "id": "memphis",
+      "path": "definitions/memphis.yml",
+      "sha256": "2934c507e8757de74cfae40c326b0c3d5a52c778b534b4b2217c2417893d6645",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/memphis.yml"
+    },
+    {
+      "id": "mesevilag",
+      "path": "definitions/mesevilag.yml",
+      "sha256": "6cd8c3f5ab330df6e56b84713e820ed92389214785bfcdefd09be09e740e14f2",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/mesevilag.yml"
+    },
+    {
+      "id": "metalguru",
+      "path": "definitions/metalguru.yml",
+      "sha256": "b87198d111aa7a395464fc991a3b06cb561375913809afb4f84536ce4bf70527",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/metalguru.yml"
+    },
+    {
+      "id": "metaltracker",
+      "path": "definitions/metaltracker.yml",
+      "sha256": "43e095ce667f0af2b5038f97917482ae3b6f7c9f2600a61e0af28ec2566de0d2",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/metaltracker.yml"
+    },
+    {
+      "id": "midnightscene",
+      "path": "definitions/midnightscene.yml",
+      "sha256": "ccde166b4fd9ff09926e6bebb722eb83ba3ed2db9afdd3d4a267006434f1f428",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/midnightscene.yml"
+    },
+    {
+      "id": "mikan",
+      "path": "definitions/mikan.yml",
+      "sha256": "cdebe3eb3b5e8f9e0ac0926133f8d18b90dc60e0c98fedfea01c49e8f757443a",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/mikan.yml"
+    },
+    {
+      "id": "milkie",
+      "path": "definitions/milkie.yml",
+      "sha256": "d8ccd3d58f3441a46a636f467b54b306fe3a4befc068f6d20118eb6546e040d3",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/milkie.yml"
+    },
+    {
+      "id": "milnueve-api",
+      "path": "definitions/milnueve-api.yml",
+      "sha256": "9baa6a799143ad5fd0719f9356f2eced1342bb077d7f4b5e2c7f00ae7d5d82ca",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/milnueve-api.yml"
+    },
+    {
+      "id": "miobt",
+      "path": "definitions/miobt.yml",
+      "sha256": "ba8c0fa6af4c6a55fb960a3f9f9306df56a0b837505af2f899262c3e0be39d6b",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/miobt.yml"
+    },
+    {
+      "id": "mixtapetorrent",
+      "path": "definitions/mixtapetorrent.yml",
+      "sha256": "bf92c2b13e17b6fcd86d5f6e6bca729ff60df28b6645d8b93ed8fe4f30c9645f",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/mixtapetorrent.yml"
+    },
+    {
+      "id": "mma-torrents",
+      "path": "definitions/mma-torrents.yml",
+      "sha256": "bb60d03eb08759df3218324eb2ea57a05467a0a27b63181709174c5fa6492fff",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/mma-torrents.yml"
+    },
+    {
+      "id": "mnv",
+      "path": "definitions/mnv.yml",
+      "sha256": "8a018862abaced4170c7e730387391e1adeacc870410fc637b4b0f53a9bab974",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/mnv.yml"
+    },
+    {
+      "id": "mojblink",
+      "path": "definitions/mojblink.yml",
+      "sha256": "5878663cd9b9a76086b4a1ad57c1e039e458d026219cf1f70a9a3760e1b93eaf",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/mojblink.yml"
+    },
+    {
+      "id": "momentpt",
+      "path": "definitions/momentpt.yml",
+      "sha256": "78e7aabe456aae4da6fbc1ef2219a48cc44b0e56f60ab6fb9795a08f271752c2",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/momentpt.yml"
+    },
+    {
+      "id": "monikadesign-api",
+      "path": "definitions/monikadesign-api.yml",
+      "sha256": "64f6be6ff37b23d97c42fdea765fa86bf3839077c4e8bfc073fd003955616740",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/monikadesign-api.yml"
+    },
+    {
+      "id": "mousebits",
+      "path": "definitions/mousebits.yml",
+      "sha256": "17bc32d9f76765d8feda524935b0bc317173a4245b088d84b04326a40664e577",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/mousebits.yml"
+    },
+    {
+      "id": "musebootlegs",
+      "path": "definitions/musebootlegs.yml",
+      "sha256": "98a5feba3ddcd55696177b549b42c86beaa133f0c26a94f6c0e90587f0a74272",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/musebootlegs.yml"
+    },
+    {
+      "id": "musopia",
+      "path": "definitions/musopia.yml",
+      "sha256": "60e788f50bb0ebac2bab99aa8ecc67321982642218259d112516a8c3378f612f",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/musopia.yml"
+    },
+    {
+      "id": "muxuege",
+      "path": "definitions/muxuege.yml",
+      "sha256": "03bfb6b761650b5b88c9d5a78d6a5678d83e68f2b956ebcee48382c3ebcc8c5e",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/muxuege.yml"
+    },
+    {
+      "id": "mvgroupforum",
+      "path": "definitions/mvgroupforum.yml",
+      "sha256": "9156cdf6d3a932b1d9ab4641e5c2209e72cebfc2c6aa1d0c016662a24aafbe9e",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/mvgroupforum.yml"
+    },
+    {
+      "id": "mvgroupmain",
+      "path": "definitions/mvgroupmain.yml",
+      "sha256": "c970083bbe66b1512d728b21d4e2f61e539a155931494e5d757ff2414d98ce5b",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/mvgroupmain.yml"
+    },
+    {
+      "id": "mypornclub",
+      "path": "definitions/mypornclub.yml",
+      "sha256": "495237fb93fd128d15688d54eb8ea1d156c86342c390bd55f3fc90694d690f33",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/mypornclub.yml"
+    },
+    {
+      "id": "myspleen",
+      "path": "definitions/myspleen.yml",
+      "sha256": "08d54ec4b14124773bdc604b4f80a7a1b1b49a90de289b6e990f643779cb4e4a",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/myspleen.yml"
+    },
+    {
+      "id": "nanyangpt",
+      "path": "definitions/nanyangpt.yml",
+      "sha256": "6dcd2f923ce5ecab052aa6ec0401465c98d3eeedc5c6b714a32dc55743f8676b",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/nanyangpt.yml"
+    },
+    {
+      "id": "ncore",
+      "path": "definitions/ncore.yml",
+      "sha256": "984748b9c153925c7a3481fb0824425af4b3793051169ff77d264a02df5c7928",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ncore.yml"
+    },
+    {
+      "id": "nekobt",
+      "path": "definitions/nekobt.yml",
+      "sha256": "684c6bedb658f0633945b5c96603f67912df95e3c309717ee573e2292496cc67",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/nekobt.yml"
+    },
+    {
+      "id": "nethd",
+      "path": "definitions/nethd.yml",
+      "sha256": "db35ec65808a32181826300e6366df7da5078561be354e580a145f80d3c033e0",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/nethd.yml"
+    },
+    {
+      "id": "new-team",
+      "path": "definitions/new-team.yml",
+      "sha256": "11e5d849de295640df3e1ec62cd3239e431010bbe27fa7610e0cd19d13675f73",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/new-team.yml"
+    },
+    {
+      "id": "newheaven",
+      "path": "definitions/newheaven.yml",
+      "sha256": "210e96d92cd5f6dcbd52a83c2a322136e58c68e51753e8a0c291489c07b8fb58",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/newheaven.yml"
+    },
+    {
+      "id": "newretro",
+      "path": "definitions/newretro.yml",
+      "sha256": "96959cdd8aeeb7d2d5a09a05ae5cab4119c8645834e2c63b3407bbcd1245e3ce",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/newretro.yml"
+    },
+    {
+      "id": "newstudio",
+      "path": "definitions/newstudio.yml",
+      "sha256": "674c3e506c55cdefab77d16eb910711cb6ee8cb27ce478cfc4f3a244638613f7",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/newstudio.yml"
+    },
+    {
+      "id": "newstudiol",
+      "path": "definitions/newstudiol.yml",
+      "sha256": "af6abdf5787987fe9778731e3d67d783f4e4e7db52b0bc45f5910d9e2c9cdc3c",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/newstudiol.yml"
+    },
+    {
+      "id": "nicept",
+      "path": "definitions/nicept.yml",
+      "sha256": "045db6e48613f39bd60395273935015963567b14915b7f41033189ed93bc5318",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/nicept.yml"
+    },
+    {
+      "id": "nipponsei",
+      "path": "definitions/nipponsei.yml",
+      "sha256": "79c218ddcce18b8b9d5493fe2cbd798a415d4e139ed51d6050863cd10595f5e9",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/nipponsei.yml"
+    },
+    {
+      "id": "nirvana",
+      "path": "definitions/nirvana.yml",
+      "sha256": "8f24471d83237b3d501c32a82ea52f5317732408d8bc569801e8ee5254758eaa",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/nirvana.yml"
+    },
+    {
+      "id": "njtupt",
+      "path": "definitions/njtupt.yml",
+      "sha256": "218e4914ed34648cee88f8f337e55bd31b3fc2c0d06078468d8d5c1c3b30e994",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/njtupt.yml"
+    },
+    {
+      "id": "nobs",
+      "path": "definitions/nobs.yml",
+      "sha256": "6491dcba416f2f5668404f6187d0529e9b523d31f3cd441a2a70391b65743b6a",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/nobs.yml"
+    },
+    {
+      "id": "noname-club",
+      "path": "definitions/noname-club.yml",
+      "sha256": "8ea98e520eccada1f76a72c08b8f08658e5ea9bb1ec61a52edf71b227b4992d5",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/noname-club.yml"
+    },
+    {
+      "id": "noname-clubl",
+      "path": "definitions/noname-clubl.yml",
+      "sha256": "82a3da0f25d48c2539a45dfc7ebd9b4ee5d180144fc9b903670e6649f818d3b0",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/noname-clubl.yml"
+    },
+    {
+      "id": "nordicbytes",
+      "path": "definitions/nordicbytes.yml",
+      "sha256": "c70382b946d90761382de9403a76d0727021f1997f36d9ac35eade03191bc47c",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/nordicbytes.yml"
+    },
+    {
+      "id": "nordicquality-api",
+      "path": "definitions/nordicquality-api.yml",
+      "sha256": "54dbfeb13a9d5b7cfae323405f6ce6582aae347ed3e89baac157df936d7a9bab",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/nordicquality.yml"
+    },
+    {
+      "id": "nostradamus",
+      "path": "definitions/nostradamus.yml",
+      "sha256": "500fe82c52862401d3b0b7832427145a0020cdcee96bdf7c5996b2ccdad1825e",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/nostradamus.yml"
+    },
+    {
+      "id": "novahd",
+      "path": "definitions/novahd.yml",
+      "sha256": "9d2df4733f92869be47a2e67443545098a94878b26fb628090ef9abe3b17bf2d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/novahd.yml"
+    },
+    {
+      "id": "nyaasi",
+      "path": "definitions/nyaasi.yml",
+      "sha256": "b0d09bcb6a304332bd5310909a923aa197e0467d9b8deec3792d764fe81b0d09",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/nyaasi.yml"
+    },
+    {
+      "id": "okpt",
+      "path": "definitions/okpt.yml",
+      "sha256": "1b5f9ba33278744d0aeea01c28bde52db7690649ec83ff461533d97e18df7d9f",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/okpt.yml"
+    },
+    {
+      "id": "oldgreektracker",
+      "path": "definitions/oldgreektracker.yml",
+      "sha256": "a12e1e9a3ba26c57fccdc0789860f0b2260e5a9de9d3b5a216cea0e31a92bf65",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/oldgreektracker.yml"
+    },
+    {
+      "id": "oldtoonsworld",
+      "path": "definitions/oldtoonsworld.yml",
+      "sha256": "b448b0895c4eb9212142216aa48ea6468d5784112f09cbf3a8febbfc94bbc4f3",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/oldtoonsworld.yml"
+    },
+    {
+      "id": "onejav",
+      "path": "definitions/onejav.yml",
+      "sha256": "7ade351f4eb35c6c6303808ce87d1db9454ed4c886f396ba66a6bd757d28c499",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/onejav.yml"
+    },
+    {
+      "id": "onlyencodes-api",
+      "path": "definitions/onlyencodes-api.yml",
+      "sha256": "5887bc871d7fe1e015e5bd68bd50bd80412a52d33fcabc2d31689fa3498d4cb3",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/onlyencodes-api.yml"
+    },
+    {
+      "id": "opencd",
+      "path": "definitions/opencd.yml",
+      "sha256": "4bc8eaa9d4033dd63c3d8b74cef7c05a20a5d48f0aca610466191032c51ee9d1",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/opencd.yml"
+    },
+    {
+      "id": "opensharing",
+      "path": "definitions/opensharing.yml",
+      "sha256": "a3ca69af46645a31f35f4806b1935343550796d0109f4ab97f9dc7c06a370397",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/opensharing.yml"
+    },
+    {
+      "id": "order66",
+      "path": "definitions/order66.yml",
+      "sha256": "15c5c0049d8b69e581dde636668327ec7766401e3747082a9369be3d86c2417b",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/order66.yml"
+    },
+    {
+      "id": "oshenpt",
+      "path": "definitions/oshenpt.yml",
+      "sha256": "2051d9efaedb5682c6169917e181ab9cdf0c6c1031a71cae5225a50c85d95d3a",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/oshenpt.yml"
+    },
+    {
+      "id": "ourbits",
+      "path": "definitions/ourbits.yml",
+      "sha256": "8c346ab323dce8dcf1b4756d3d9d04b171f3eb0cbd0fb2e5634005a5315e859f",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ourbits.yml"
+    },
+    {
+      "id": "p2pbg",
+      "path": "definitions/p2pbg.yml",
+      "sha256": "91a64f5bd0130faa1591d87dc57c6355ee77736672dc4ba1226cc2e0db662d40",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/p2pbg.yml"
+    },
+    {
+      "id": "panda",
+      "path": "definitions/panda.yml",
+      "sha256": "aee04c742afbe23935727b218026cf7065aa5c2f9745c9e89b1b8100af01d055",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/panda.yml"
+    },
+    {
+      "id": "pandacd",
+      "path": "definitions/pandacd.yml",
+      "sha256": "34009511c4d23fde17dc9b7f71ffb26df689021554ca943c9cd7ccb5ce313e2b",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/pandacd.yml"
+    },
+    {
+      "id": "parabellumhd-api",
+      "path": "definitions/parabellumhd-api.yml",
+      "sha256": "27c9aba7dac6bd84948f9cf838ca6949038467ffbc1ac87f081677ab5edb4223",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/parabellumhd-api.yml"
+    },
+    {
+      "id": "party-tracker",
+      "path": "definitions/party-tracker.yml",
+      "sha256": "216a1c9e7fca8df0deff8c3d7e67e9b4f15b05f25a9807448f542db1dbdb1c6f",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/party-tracker.yml"
+    },
+    {
+      "id": "pctorrent",
+      "path": "definitions/pctorrent.yml",
+      "sha256": "f2851615289d787a64ddcc9b3a3c0de1a3051ed607ec0168639b5d8f2ee30e1c",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/pctorrent.yml"
+    },
+    {
+      "id": "peeratiko",
+      "path": "definitions/peeratiko.yml",
+      "sha256": "3b20f58b3c9ddbc840bd3f6a9f5fea72340ef9dc1fcf6320d8d8304594d08811",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/peeratiko.yml"
+    },
+    {
+      "id": "peergarden",
+      "path": "definitions/peergarden.yml",
+      "sha256": "e2e9657e66ae0b54267be9043346e2cd0cca0c3022591158e3c39f47a21b2a5e",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/peergarden.yml"
+    },
+    {
+      "id": "peersfm",
+      "path": "definitions/peersfm.yml",
+      "sha256": "ca11c102429e98073eace38e3eceeeb8a60fa5a37b82d9fbce3eea541d84267d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/peersfm.yml"
+    },
+    {
+      "id": "phoenixproject",
+      "path": "definitions/phoenixproject.yml",
+      "sha256": "ba48fe8ee6a68d8b48f3ef6f5e40e680dc2dd9d05e10af7bb17a094ca6a6aa01",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/phoenixproject.yml"
+    },
+    {
+      "id": "pier720",
+      "path": "definitions/pier720.yml",
+      "sha256": "412794a8d9c06097967c1283712a845dc1b7c2db8a649d5e5d45bca15e62f2ba",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/pier720.yml"
+    },
+    {
+      "id": "pignetwork",
+      "path": "definitions/pignetwork.yml",
+      "sha256": "52f502f17002fc830592eb7f36e5f5653caad425a95d0ce83d40037ed6182f7c",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/pignetwork.yml"
+    },
+    {
+      "id": "pixelcove",
+      "path": "definitions/pixelcove.yml",
+      "sha256": "08a39f91c836798f99ad9ea1af60ce3d2dc65c01fa39456c679426588fcbf21c",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/pixelcove.yml"
+    },
+    {
+      "id": "pixelcove2fa",
+      "path": "definitions/pixelcove2fa.yml",
+      "sha256": "8d48e7591399b7e01d6e9d5437d12a56f9722527691621d5533d622aeaac87c2",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/pixelcove2fa.yml"
+    },
+    {
+      "id": "playletpt",
+      "path": "definitions/playletpt.yml",
+      "sha256": "eb2945f629f2d76fd1a30b2e1f7227da6791dc960eb6997d104ac32b4b78082e",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/playletpt.yml"
+    },
+    {
+      "id": "plugintorrent",
+      "path": "definitions/plugintorrent.yml",
+      "sha256": "1c3e0ef05c08bdecdbdd2b2f5ec7119f85cb921ca70d6715a67930ecdc23d887",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/plugintorrent.yml"
+    },
+    {
+      "id": "podzemlje",
+      "path": "definitions/podzemlje.yml",
+      "sha256": "f9af30a3e0f0d746db80014740c5060b69b60dc0a6acfa22092a3ecd4a9d9c29",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/podzemlje.yml"
+    },
+    {
+      "id": "polishtorrent",
+      "path": "definitions/polishtorrent.yml",
+      "sha256": "82e3d95548e3af3c517726cfe6a7bc2140f01728c0b0acaa0c5f9e679caeade6",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/polishtorrent.yml"
+    },
+    {
+      "id": "polishtracker-api",
+      "path": "definitions/polishtracker-api.yml",
+      "sha256": "b97a790eabdbce4136b69f9cf06f0cdcc0bb79036475930204e2f42ea48e5c13",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/polishtracker-api.yml"
+    },
+    {
+      "id": "polskie-torrenty",
+      "path": "definitions/polskie-torrenty.yml",
+      "sha256": "f12419e5f5380758eaa196ad17f6a91a89e75c344c6f9ba2e6919b460661bf2e",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/polskie-torrenty.yml"
+    },
+    {
+      "id": "pornolab",
+      "path": "definitions/pornolab.yml",
+      "sha256": "c9a336291403c1cf273dc07b6391d4683ecb27b317191718996c5e948b6c43ff",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/pornolab.yml"
+    },
+    {
+      "id": "pornotorrent",
+      "path": "definitions/pornotorrent.yml",
+      "sha256": "87050915e734d493fd3dfde1a83ff454ddc04f46fe82a7d525a5ecf4ef8bb559",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/pornotorrent.yml"
+    },
+    {
+      "id": "pornrips",
+      "path": "definitions/pornrips.yml",
+      "sha256": "bc40ab5c6b654c2b06e41ffc884ccddf51706108b96fa8f73b090221feca6019",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/pornrips.yml"
+    },
+    {
+      "id": "pornxlab",
+      "path": "definitions/pornxlab.yml",
+      "sha256": "78570e02b84f2b6d04cbbbe129609ed7b9db47a9cc7b901508c7afbb340baf4d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/pornxlab.yml"
+    },
+    {
+      "id": "portugas-api",
+      "path": "definitions/portugas-api.yml",
+      "sha256": "d5d6240b4f632716173d547bf4bd08f825a03bc3a15cfa876e70e11d6b423a79",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/portugas-api.yml"
+    },
+    {
+      "id": "postman",
+      "path": "definitions/postman.yml",
+      "sha256": "606397c1967500f2db01722c5cc23a9a6d832dae0ba0fe3b4903543ae2a106ce",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/postman.yml"
+    },
+    {
+      "id": "postman-api",
+      "path": "definitions/postman-api.yml",
+      "sha256": "9664b19fad5c94feab8559c51f0d2beef0268d3ca74649c923316c525a47a794",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/postman-api.yml"
+    },
+    {
+      "id": "proaudiotorrents",
+      "path": "definitions/proaudiotorrents.yml",
+      "sha256": "732b4cfb45141d3f170a55b45446afadc38bbb69f3e43c489f53567ea84e4d23",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/proaudiotorrents.yml"
+    },
+    {
+      "id": "proporno",
+      "path": "definitions/proporno.yml",
+      "sha256": "48b974233dafde44f5898e1cf379dc4d50d31a009c4b4a6fcf1a4265f941ee26",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/proporno.yml"
+    },
+    {
+      "id": "ptcafe",
+      "path": "definitions/ptcafe.yml",
+      "sha256": "e6c1cbd0ff1d75d3dd3920d8c24da52d116ac07c07a47d19e53a150dee0874db",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ptcafe.yml"
+    },
+    {
+      "id": "ptcc",
+      "path": "definitions/ptcc.yml",
+      "sha256": "e7634018ade83d4eff67616102a602051afca826f91bb612d118431fc27364e8",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ptcc.yml"
+    },
+    {
+      "id": "pterclub",
+      "path": "definitions/pterclub.yml",
+      "sha256": "a345b823d5352a6a101e52c4ff8ec68ea80bec0f4cd45bac44d14019d929864b",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/pterclub.yml"
+    },
+    {
+      "id": "ptfans",
+      "path": "definitions/ptfans.yml",
+      "sha256": "6bae9a953ba3c7d1e40038da1d044bac094509a0dded62e416835c5a1f4316a5",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ptfans.yml"
+    },
+    {
+      "id": "ptfiles",
+      "path": "definitions/ptfiles.yml",
+      "sha256": "045e9d86de421852a719b0d932b7f2a11271cc516675ff39b14c72ed1a7322fa",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ptfiles.yml"
+    },
+    {
+      "id": "ptgtk",
+      "path": "definitions/ptgtk.yml",
+      "sha256": "c13694b8cdf1c4b0a8c6bb6a30d2c8e674d603ba3baacb7d7879d2f3f2872a29",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ptgtk.yml"
+    },
+    {
+      "id": "pthome",
+      "path": "definitions/pthome.yml",
+      "sha256": "7f62ff2b3c9dba470808bc2361dbba8f8795bac13dd5cb9cd5b88678e36e7b7d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/pthome.yml"
+    },
+    {
+      "id": "ptitzmx",
+      "path": "definitions/ptitzmx.yml",
+      "sha256": "134a712c0c5f847405a3698a1942bb6d372dd36bd1ff4fa0ee8c3a6ed8df07d3",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ptitzmx.yml"
+    },
+    {
+      "id": "ptlao",
+      "path": "definitions/ptlao.yml",
+      "sha256": "bf88d39b1663dfa7a9c849ca7be1c119fb07f359f49b4e2c5b17ea5360af2d18",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ptlao.yml"
+    },
+    {
+      "id": "ptlgs",
+      "path": "definitions/ptlgs.yml",
+      "sha256": "65dd1265609e26496e5937ecb249380275b1296b1cb11646e818c8ccc554d3f5",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ptlgs.yml"
+    },
+    {
+      "id": "ptsbao",
+      "path": "definitions/ptsbao.yml",
+      "sha256": "32394ee4a5fccd28443ca9c9a947d72d5f244a4127df14b47c9a5f416099ea51",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ptsbao.yml"
+    },
+    {
+      "id": "ptskit",
+      "path": "definitions/ptskit.yml",
+      "sha256": "6ea3f92062ea9a2d451866c18d79a8c607d1205743d43827e42c6ad5c6ff1124",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ptskit.yml"
+    },
+    {
+      "id": "pttey",
+      "path": "definitions/pttey.yml",
+      "sha256": "79538df4653b40e40442d8fa7bc77b049cda5ecae55d40e372d3e26c3d533980",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/pttey.yml"
+    },
+    {
+      "id": "pttime",
+      "path": "definitions/pttime.yml",
+      "sha256": "1461d91a5c007779c9cb032b7a633ea859910cab732b441c8f2e18b068cf1754",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/pttime.yml"
+    },
+    {
+      "id": "ptying",
+      "path": "definitions/ptying.yml",
+      "sha256": "e9eef76d6ad0dbc9dd1a871a2196b8add029ec2e4164ed68f96822b72b6bcafe",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ptying.yml"
+    },
+    {
+      "id": "ptzone",
+      "path": "definitions/ptzone.yml",
+      "sha256": "962ac789baaae36a9fcd4123779d9f615f54d598feeadee70ac7b797386ad421",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ptzone.yml"
+    },
+    {
+      "id": "punkshorror",
+      "path": "definitions/punkshorror.yml",
+      "sha256": "36abfad0abd751cbc78595fede03a081ad2952d2cec12606fefa97208156dd10",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/punkshorror.yml"
+    },
+    {
+      "id": "puntotorrent",
+      "path": "definitions/puntotorrent.yml",
+      "sha256": "3515749e15a26254619466b226a4e54491f51b52aa85335138a1850a57182e89",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/puntotorrent.yml"
+    },
+    {
+      "id": "pussytorrents",
+      "path": "definitions/pussytorrents.yml",
+      "sha256": "03aaf51f86fb3c3f1df5235a88ad367a0a36f8af811e23486844bb54eae57300",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/pussytorrents.yml"
+    },
+    {
+      "id": "putao",
+      "path": "definitions/putao.yml",
+      "sha256": "6a1e603e9bd66e4bccd1f432800fbcb2065b6a60aa1810e01745cf303673c206",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/putao.yml"
+    },
+    {
+      "id": "pwtorrents",
+      "path": "definitions/pwtorrents.yml",
+      "sha256": "5c63d896e8ccf6eb03b2862a8afded75a1ef592220578cc3871a4998612bbd73",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/pwtorrents.yml"
+    },
+    {
+      "id": "pwtorrents2fa",
+      "path": "definitions/pwtorrents2fa.yml",
+      "sha256": "a906e34f46c9f917e84e0f55df270e572442d813200451879001aade7a4e1177",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/pwtorrents2fa.yml"
+    },
+    {
+      "id": "qingwa",
+      "path": "definitions/qingwa.yml",
+      "sha256": "9f6c2cda28a1fb4f8a5c27e9c959213283354b40bf98a7705e904ae45a604f72",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/qingwa.yml"
+    },
+    {
+      "id": "r3vwtf",
+      "path": "definitions/r3vwtf.yml",
+      "sha256": "95fcf2fd0d57df02bc8e7283a6fd5d250fbb4183ccc96579c736af5261f8542c",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/r3vwtf.yml"
+    },
+    {
+      "id": "racing4everyone-api",
+      "path": "definitions/racing4everyone-api.yml",
+      "sha256": "3805de2bb5e9f47f6d550393863346a22211930e2fd8a5cc43b044b80da87016",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/racing4everyone-api.yml"
+    },
+    {
+      "id": "racingforme",
+      "path": "definitions/racingforme.yml",
+      "sha256": "c749dd4c17adf3e65be4c9a38e40847fa4444a1463facdacd2f03a9dc5a11050",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/racingforme.yml"
+    },
+    {
+      "id": "railgunpt",
+      "path": "definitions/railgunpt.yml",
+      "sha256": "d7ebedb35b14592b2c81a169b9397ac70db4f880c6022fb7c406ecf5a2cd8eba",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/railgunpt.yml"
+    },
+    {
+      "id": "rainbowtracker",
+      "path": "definitions/rainbowtracker.yml",
+      "sha256": "f2371874c3cafecdabf721613d06fa8be62f0a49746c247c5c5e195c7e1ef253",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/rainbowtracker.yml"
+    },
+    {
+      "id": "rastastugan-api",
+      "path": "definitions/rastastugan-api.yml",
+      "sha256": "862aacdfb3a7845e186c601cd05f4c14cfa6f578643141c7e1186e5e02d66b87",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/rastastugan-api.yml"
+    },
+    {
+      "id": "redstartorrent",
+      "path": "definitions/redstartorrent.yml",
+      "sha256": "a6fd75eeabb6877cb3c311005b92355b90a7aa07b7863153668e536467f45e29",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/redstartorrent.yml"
+    },
+    {
+      "id": "reelflix-api",
+      "path": "definitions/reelflix-api.yml",
+      "sha256": "930bc758a00111b445211b2934daf2263795db81c014b4a39de48933ceb09b7d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/reelflix-api.yml"
+    },
+    {
+      "id": "retromoviesclub-api",
+      "path": "definitions/retromoviesclub-api.yml",
+      "sha256": "47c9da6879855a29fb2c75f8659818e4bdef7d7dfb4e1f22724f1ecabd052007",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/retromoviesclub-api.yml"
+    },
+    {
+      "id": "retrotoon",
+      "path": "definitions/retrotoon.yml",
+      "sha256": "e1dd4a0470c0ae075036bbe2d36cf21c0b8eb97574e8d05294e5e7facbe08b37",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/retrotoon.yml"
+    },
+    {
+      "id": "rgfootball",
+      "path": "definitions/rgfootball.yml",
+      "sha256": "4e31aa84c4f5066284af73fe29f6ed541c8da159aa033254c9bf797f6eafd3a5",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/rgfootball.yml"
+    },
+    {
+      "id": "rintor",
+      "path": "definitions/rintor.yml",
+      "sha256": "4487a95528ad7bbdafe38864d752af704d3e5ea9cab0418f7482a5a2a430d0d4",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/rintor.yml"
+    },
+    {
+      "id": "rintornet",
+      "path": "definitions/rintornet.yml",
+      "sha256": "5f0e31364478f46238d8cf7cfab3ae7b221c8232666ab4591bfdb8a3dc77dcf2",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/rintornet.yml"
+    },
+    {
+      "id": "riperam",
+      "path": "definitions/riperam.yml",
+      "sha256": "bf4490dbb68dcf66aa7c08da6c3d0a5809ac7ab2941a42f24b6aee07fa10a55e",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/riperam.yml"
+    },
+    {
+      "id": "rockethd",
+      "path": "definitions/rockethd.yml",
+      "sha256": "1776adaf6bccb41b6c2bd2a9bb090ae5246d4bc10fb889bda956c119f9f03af9",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/rockethd.yml"
+    },
+    {
+      "id": "romanianmetaltorrents",
+      "path": "definitions/romanianmetaltorrents.yml",
+      "sha256": "aefc9b5d186ffa4f3e81654043cfc3e4b44e0cd8b63e2610ceeb46d87d2d2d64",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/romanianmetaltorrents.yml"
+    },
+    {
+      "id": "rousi-pro",
+      "path": "definitions/rousi-pro.yml",
+      "sha256": "ff72993fc0a9f146576316a48bbe814bca5104cff7d4905dc9f7df761ddb2a9d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/rousi-pro.yml"
+    },
+    {
+      "id": "rudub",
+      "path": "definitions/rudub.yml",
+      "sha256": "db751ffc16499740a7611dda809fbcc1a7113821960d287520445fbcb7179b40",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/rudub.yml"
+    },
+    {
+      "id": "rustorka",
+      "path": "definitions/rustorka.yml",
+      "sha256": "875744d8da23a622cf38b54dadea0e3e533deeccc9051401ba25c204aecf647c",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/rustorka.yml"
+    },
+    {
+      "id": "rutor",
+      "path": "definitions/rutor.yml",
+      "sha256": "b94be48949ddc2eab5fa9a541f23b786dd6c251581f13cf93bdbc8b37eb9c038",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/rutor.yml"
+    },
+    {
+      "id": "rutracker-ru",
+      "path": "definitions/rutracker-ru.yml",
+      "sha256": "5a4080a5eda27815e914f09aed90ac47e3fb8b092b57b2c784ae88db96cc683b",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/rutracker-ru.yml"
+    },
+    {
+      "id": "samaritano",
+      "path": "definitions/samaritano.yml",
+      "sha256": "6f680a188c77cb4d027e7bcc7848a53fdebeb176178416ef2b1a53f053dcbc76",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/samaritano.yml"
+    },
+    {
+      "id": "sbpt",
+      "path": "definitions/sbpt.yml",
+      "sha256": "49f9df5f80dbbe839282ef8b6d096aca722b0db185285ad4ac7dbe00a534df8b",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/sbpt.yml"
+    },
+    {
+      "id": "scenerush",
+      "path": "definitions/scenerush.yml",
+      "sha256": "b5b16b5f2337c438f55b2da157afda7f606908383cd4db38a55c48724b92180c",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/scenerush.yml"
+    },
+    {
+      "id": "scenetime-api",
+      "path": "definitions/scenetime-api.yml",
+      "sha256": "7f000baaaa526eef2288288b099b8cd5aaccdcc1a00373fe92a7570ef36b5687",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/scenetime-api.yml"
+    },
+    {
+      "id": "seedcore-api",
+      "path": "definitions/seedcore-api.yml",
+      "sha256": "91359ca2e2fe8a99a3fda73daba8d52c0a43a8167d2a9f526b9ebfac2d4880bf",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/seedcore-api.yml"
+    },
+    {
+      "id": "seedfile",
+      "path": "definitions/seedfile.yml",
+      "sha256": "e10abb0b63321aa901f47f1c9e1ca9c8ef8127d20c8280b5755680be1a05d71d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/seedfile.yml"
+    },
+    {
+      "id": "seedpool-api",
+      "path": "definitions/seedpool-api.yml",
+      "sha256": "4ac17db6f87ca6a8446fab41fbb7fa2f819a943dfe14880cbf6aaa4091e5977b",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/seedpool-api.yml"
+    },
+    {
+      "id": "selezen",
+      "path": "definitions/selezen.yml",
+      "sha256": "f3c2e58fabe8de74125be27c728a98b7e80b8928c6729126bc0c9e5d87555dcf",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/selezen.yml"
+    },
+    {
+      "id": "sewerpt",
+      "path": "definitions/sewerpt.yml",
+      "sha256": "36e1cf2d6c017dd755118492e08ab63d703e510514ba6e72af77d25c19377a7d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/sewerpt.yml"
+    },
+    {
+      "id": "sextorrent-api",
+      "path": "definitions/sextorrent-api.yml",
+      "sha256": "cde343e56454040507323554f8c91cb0009c3a56fec788b56a93d2189b920c4a",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/sextorrent-api.yml"
+    },
+    {
+      "id": "sexypics",
+      "path": "definitions/sexypics.yml",
+      "sha256": "c9b4f2606f64f65989a9859497e9a92ad11327667c466d40a65aed86bbd6a1b5",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/sexypics.yml"
+    },
+    {
+      "id": "shadowbit",
+      "path": "definitions/shadowbit.yml",
+      "sha256": "ae7341d135cc8b6928da0de8f5b6deda4cf83c46ef6d8d72d94f73ee35987a4c",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/shadowbit.yml"
+    },
+    {
+      "id": "shakaw",
+      "path": "definitions/shakaw.yml",
+      "sha256": "b7bbd1843f3eaf16cb6ab1957689363cf5f3054e4cf21d1b3cf421a389f6d335",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/shakaw.yml"
+    },
+    {
+      "id": "shanaproject",
+      "path": "definitions/shanaproject.yml",
+      "sha256": "c92518b4b022d7bfe97697ff24438affde75ac9d0743878f8df46851c7f37253",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/shanaproject.yml"
+    },
+    {
+      "id": "shareisland-api",
+      "path": "definitions/shareisland-api.yml",
+      "sha256": "8e875e0f8888b98c21293bf3f3df2abcaeab49852ffcb6ba8f6d794d179c35e7",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/shareisland-api.yml"
+    },
+    {
+      "id": "showrss",
+      "path": "definitions/showrss.yml",
+      "sha256": "ced77bfae165755a13bc2c6c2c6bef7a718658d599cf16562b76369f77607ee1",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/showrss.yml"
+    },
+    {
+      "id": "siambit",
+      "path": "definitions/siambit.yml",
+      "sha256": "3589c8bc39517941dfe75993e9b8293bcad71108f2dd78c3a31697869c6d106c",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/siambit.yml"
+    },
+    {
+      "id": "siqi",
+      "path": "definitions/siqi.yml",
+      "sha256": "06fa1dbe429e80f62fc45e01d86eaefed0e765bd91986eecb732be0f0bcf87b9",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/siqi.yml"
+    },
+    {
+      "id": "skidrowrepack",
+      "path": "definitions/skidrowrepack.yml",
+      "sha256": "616f8b98822d51249eae86d614f0ee7968d42a112125cbf6b5b591ebd28216fa",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/skidrowrepack.yml"
+    },
+    {
+      "id": "skipthecommercials-api",
+      "path": "definitions/skipthecommercials-api.yml",
+      "sha256": "e613d0014dbc8aa6c9080714bdb7b8946b318638ae7c08f77a8cf87bb8a0a6f7",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/skipthecommercials-api.yml"
+    },
+    {
+      "id": "sktorrent",
+      "path": "definitions/sktorrent.yml",
+      "sha256": "7da81272d1f9ea647300ec3eec103fc5e685bbd1c3429786536a22d75de475ad",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/sktorrent.yml"
+    },
+    {
+      "id": "sktorrent-org",
+      "path": "definitions/sktorrent-org.yml",
+      "sha256": "da6d7eb64c5c7d4ebef132591644d1b1c0ab479d2a0db9f5cc14e136d3e30e24",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/sktorrent-org.yml"
+    },
+    {
+      "id": "slobitgames",
+      "path": "definitions/slobitgames.yml",
+      "sha256": "67d5e3a8e8d0dde6d5c7a3c27034479d14c4dc826de6c6155766a46553b0a4a2",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/slobitgames.yml"
+    },
+    {
+      "id": "snowpt",
+      "path": "definitions/snowpt.yml",
+      "sha256": "66ab7eb480b0ceb1c06954a66292ccf810d0344687dfabd86e91d58c21e88b88",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/snowpt.yml"
+    },
+    {
+      "id": "sosulki",
+      "path": "definitions/sosulki.yml",
+      "sha256": "dee764c6c2d38a01484077e2b94369e0a1fe2018aed533f57abac7b5136d4762",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/sosulki.yml"
+    },
+    {
+      "id": "soulvoice",
+      "path": "definitions/soulvoice.yml",
+      "sha256": "fe6b1ab0a83fe824f8a8a4dc9b6d6867267314a478fcd352e9160dd2baea35b3",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/soulvoice.yml"
+    },
+    {
+      "id": "speedmasterhd",
+      "path": "definitions/speedmasterhd.yml",
+      "sha256": "a1f50caf96bca47c12f84c1c467c57e0c1ef11ca0aa466b222fc59b311ae9873",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/speedmasterhd.yml"
+    },
+    {
+      "id": "spiritofrevolution",
+      "path": "definitions/spiritofrevolution.yml",
+      "sha256": "72cdfcf98eee58883dce149701a243a8cc608d7268beb86d219e09c149eede51",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/spiritofrevolution.yml"
+    },
+    {
+      "id": "sportscora",
+      "path": "definitions/sportscora.yml",
+      "sha256": "b202ce9bb8aee44845c7b92d06fda52532c935c0f3fde2b5e89ddccb3c58bf3d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/sportscora.yml"
+    },
+    {
+      "id": "sportscult",
+      "path": "definitions/sportscult.yml",
+      "sha256": "0637a1adbde7a873f051a2db5bf38f712e6a4d23a0ee74d672e0767e4b74e2b3",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/sportscult.yml"
+    },
+    {
+      "id": "springsunday",
+      "path": "definitions/springsunday.yml",
+      "sha256": "d7ebf570e327d731452212aac19ae58517ec0e845848a6dea25d162dc754e483",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/springsunday.yml"
+    },
+    {
+      "id": "sukebeinyaasi",
+      "path": "definitions/sukebeinyaasi.yml",
+      "sha256": "95508a1c93f331903021ac0aac79679c9169287818095697d352bbe8de0451d5",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/sukebeinyaasi.yml"
+    },
+    {
+      "id": "sunnypt",
+      "path": "definitions/sunnypt.yml",
+      "sha256": "2bacf38c8de713ef6c4c82d532895abfeada0c9415ef8188539c9a4369940153",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/sunnypt.yml"
+    },
+    {
+      "id": "superbits",
+      "path": "definitions/superbits.yml",
+      "sha256": "9013006b45210ff7dfd1670b994bd58dddc638bfe0b43dc8304996f9c30b4e99",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/superbits.yml"
+    },
+    {
+      "id": "swarmazon-api",
+      "path": "definitions/swarmazon-api.yml",
+      "sha256": "c8c2e05426311d7242b2ac3f29379dd0d4f866d021750297b357b5722093a57f",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/swarmazon-api.yml"
+    },
+    {
+      "id": "tangpt",
+      "path": "definitions/tangpt.yml",
+      "sha256": "61d428de3f1967e77de53dd212ab16b21c00ea042e49f64750ea375f6b5a658e",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/tangpt.yml"
+    },
+    {
+      "id": "tapochek",
+      "path": "definitions/tapochek.yml",
+      "sha256": "df0e694eef2773fff22e7a5c15c72588708c2c1621857a1344d04fde8645e7fd",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/tapochek.yml"
+    },
+    {
+      "id": "tasmanit",
+      "path": "definitions/tasmanit.yml",
+      "sha256": "e3ecb632706d8dc0cf0f07bdb4a03099087b6e87268ed35d716e7bbb6e763853",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/tasmanit.yml"
+    },
+    {
+      "id": "teamctgame",
+      "path": "definitions/teamctgame.yml",
+      "sha256": "178acf57cfc030825ad53ce4e7515960ff6c6568cd1692c92d482aebfc7d39e4",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/teamctgame.yml"
+    },
+    {
+      "id": "teamflix",
+      "path": "definitions/teamflix.yml",
+      "sha256": "333ec60380f2eed4cb6c51c7ffead27d13f1e603319ac25e7f9ce99af65f3fc6",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/teamflix.yml"
+    },
+    {
+      "id": "teamhd",
+      "path": "definitions/teamhd.yml",
+      "sha256": "fa305f5ef616d78c22f0b947776d8b87b790aceca4e8f695366b6ad4657307d9",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/teamhd.yml"
+    },
+    {
+      "id": "teamos",
+      "path": "definitions/teamos.yml",
+      "sha256": "517bf03e28dd7134ebcf4f75470b409c7510797ccd2de61607c5155d1de1e2a1",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/teamos.yml"
+    },
+    {
+      "id": "thebrothers",
+      "path": "definitions/thebrothers.yml",
+      "sha256": "d1b2452c2ff6f887d908764832bade74ab5644b95ef694025904400dabb0086d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/thebrothers.yml"
+    },
+    {
+      "id": "thecrazyones",
+      "path": "definitions/thecrazyones.yml",
+      "sha256": "acaba87ed145c4874e971414cda7ddbcf82cf723524809a0a5713b3bb808435b",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/thecrazyones.yml"
+    },
+    {
+      "id": "theempire",
+      "path": "definitions/theempire.yml",
+      "sha256": "2139485193e753bc79b0cf40e79bcbec8cf783b6d283177b3f539ed7a2977cd1",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/theempire.yml"
+    },
+    {
+      "id": "thefallingangels",
+      "path": "definitions/thefallingangels.yml",
+      "sha256": "3ff7f7a6e7aefe4c56b838923da8715566945aa1fcc0509996804451cc537d71",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/thefallingangels.yml"
+    },
+    {
+      "id": "thegeeks",
+      "path": "definitions/thegeeks.yml",
+      "sha256": "401f11a35bd9e57289ed96c4f87217b5fee61355397d33cf0d8183bfce36e29e",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/thegeeks.yml"
+    },
+    {
+      "id": "thekitchen",
+      "path": "definitions/thekitchen.yml",
+      "sha256": "d687cb7aceafff7792b5573b5364bacf8f42a291d794bbec1810fd842b1b9901",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/thekitchen.yml"
+    },
+    {
+      "id": "theleachzone-api",
+      "path": "definitions/theleachzone-api.yml",
+      "sha256": "e22358c174e48dbb8e256adfb8e21b2c97a6b9d062b514ebb5ce4e2ccd2d4aa6",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/theleachzone-api.yml"
+    },
+    {
+      "id": "themixingbowl",
+      "path": "definitions/themixingbowl.yml",
+      "sha256": "7e2b3ae0c4a10ec863848f23e7dd6fef4938deedcc8aaf6d7b05ea6386fc61ca",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/themixingbowl.yml"
+    },
+    {
+      "id": "thenewfun",
+      "path": "definitions/thenewfun.yml",
+      "sha256": "af07b51da13f31b79eae6cbae90258afd528dd7b869ba12730abd92f5197bd34",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/thenewfun.yml"
+    },
+    {
+      "id": "theoccult",
+      "path": "definitions/theoccult.yml",
+      "sha256": "12f0ec9be37ecdc47bf48a8fbef2d82a6df9a228d0095cccb7e35838e2b20dc1",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/theoccult.yml"
+    },
+    {
+      "id": "theoldschool-api",
+      "path": "definitions/theoldschool-api.yml",
+      "sha256": "705c272ea06c1fc32d044623425d0bc881aedbb30ff61f1a7c5e01551cb8cf98",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/theoldschool-api.yml"
+    },
+    {
+      "id": "theparadiese",
+      "path": "definitions/theparadiese.yml",
+      "sha256": "514ab682fae153878f448e7bc07ad8dc7357ed3a7f73b3b6c55e51ef575a9cfa",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/theparadiese.yml"
+    },
+    {
+      "id": "thepiratebay",
+      "path": "definitions/thepiratebay.yml",
+      "sha256": "59b2412c12b0242f9b7107f1b05be251af631b071a97fc6f0e1e7622a4dde15d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/thepiratebay.yml"
+    },
+    {
+      "id": "theplace",
+      "path": "definitions/theplace.yml",
+      "sha256": "fe60a897b8db0904944d42cfaa2137331401de7436cb79e92861d2434775dda3",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/theplace.yml"
+    },
+    {
+      "id": "therarbg",
+      "path": "definitions/therarbg.yml",
+      "sha256": "9d5e878ced5d35e8b2a29e88e0b7adc817abe3e6058ee05bded87306f57634a6",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/therarbg.yml"
+    },
+    {
+      "id": "theshow",
+      "path": "definitions/theshow.yml",
+      "sha256": "9235a8ae9637348ae0600094de496ad4cabac2f6af312f5db7a95f239ca51a9e",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/theshow.yml"
+    },
+    {
+      "id": "thevault",
+      "path": "definitions/thevault.yml",
+      "sha256": "1cb5bddd3041aa5a66c832d20f23a53bf24012e8a5800f7dddc8063b7bd36114",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/thevault.yml"
+    },
+    {
+      "id": "tjupt",
+      "path": "definitions/tjupt.yml",
+      "sha256": "2eff479dfa5b5deea1c1e0ecd680d07131b998c17a22d9ae4dbe25510647ca5d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/tjupt.yml"
+    },
+    {
+      "id": "tlfbits",
+      "path": "definitions/tlfbits.yml",
+      "sha256": "7d37d54c3c3660c55d118fc3298ca99a98ce5cf4e6a62c8c2fb2124f1ffaa6e1",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/tlfbits.yml"
+    },
+    {
+      "id": "tmghub",
+      "path": "definitions/tmghub.yml",
+      "sha256": "83220042c37843505b47da124cc0244f7252fc4f1bbf7daa8f5409abc8ac6144",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/tmghub.yml"
+    },
+    {
+      "id": "tocashare",
+      "path": "definitions/tocashare.yml",
+      "sha256": "6f94a6f4ec331f56a50e390097f5e30d5d741946ccf324225ac7f983d7969658",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/tocashare.yml"
+    },
+    {
+      "id": "tokyotosho",
+      "path": "definitions/tokyotosho.yml",
+      "sha256": "5392e572b2a59147d00a6fbb7a21519779b26756ebdf7edc58b63bdf0ba9bd3b",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/tokyotosho.yml"
+    },
+    {
+      "id": "tormac",
+      "path": "definitions/tormac.yml",
+      "sha256": "77d53a6ab4c0251b28040542dbccfffd86b7cbf1ee091c8c3552e23b87853579",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/tormac.yml"
+    },
+    {
+      "id": "tornado",
+      "path": "definitions/tornado.yml",
+      "sha256": "225c730e881a6cd932e2d22102dc2f04b0523ec99616b46f95d2edb06abb94e0",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/tornado.yml"
+    },
+    {
+      "id": "torrent-heaven",
+      "path": "definitions/torrent-heaven.yml",
+      "sha256": "e292c10e6bd7951dd6604494bfdf3d4a733566f1b6e54af53d94f0714aebcb92",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrent-heaven.yml"
+    },
+    {
+      "id": "torrent-pirat",
+      "path": "definitions/torrent-pirat.yml",
+      "sha256": "f604b6eae3d9aa92f145b83f33aaacb73b54819a1694445265d32f20e0d75313",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrent-pirat.yml"
+    },
+    {
+      "id": "torrent-turk",
+      "path": "definitions/torrent-turk.yml",
+      "sha256": "ed7c0a66001cdd003229d4979c9452328121afff3022a451ef1b119a0cc2d397",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrent-turk.yml"
+    },
+    {
+      "id": "torrent9",
+      "path": "definitions/torrent9.yml",
+      "sha256": "00294ffbcb1baa38048592037f4584d6d73bf5704b9f08dc540c447bdfc3648b",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrent9.yml"
+    },
+    {
+      "id": "torrentbd",
+      "path": "definitions/torrentbd.yml",
+      "sha256": "760085f7a13879b9579bdd3b15542a9d7067eb09cc2867384dfdbf101d1bdfe1",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrentbd.yml"
+    },
+    {
+      "id": "torrentby",
+      "path": "definitions/torrentby.yml",
+      "sha256": "713cba0061dd73dc034512a1946a319f488d56e8fe19389b6364170b2f8267f6",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrentby.yml"
+    },
+    {
+      "id": "torrentbyte",
+      "path": "definitions/torrentbyte.yml",
+      "sha256": "13f67c90b37861c7e20c9be35702b190dbe8f3e00df7b38e6feac3438e3e9169",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrentbyte.yml"
+    },
+    {
+      "id": "torrentccf",
+      "path": "definitions/torrentccf.yml",
+      "sha256": "fc09d7de3164bcc81f4b5ee7370365d46cbd0dc34fda9291993af854f590dec5",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrentccf.yml"
+    },
+    {
+      "id": "torrentclaw",
+      "path": "definitions/torrentclaw.yml",
+      "sha256": "223988c670c8758503255fac7ad05c152e4a1e5f460c7d232f2ba21154153053",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrentclaw.yml"
+    },
+    {
+      "id": "torrentcore",
+      "path": "definitions/torrentcore.yml",
+      "sha256": "13e2a3ff8ba6e98ddad741d2282d2937907a31e50170feddffb6a37494942b0f",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrentcore.yml"
+    },
+    {
+      "id": "torrentdd",
+      "path": "definitions/torrentdd.yml",
+      "sha256": "1ee18fb45949cd7c98cbe7bf5b3a39e5774ba26c9ae22b5088cdae5dba62bb10",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrentdd.yml"
+    },
+    {
+      "id": "torrentdownload",
+      "path": "definitions/torrentdownload.yml",
+      "sha256": "913a67d7fed6d1d8ebe3b3de220737cd6bcdc20e33fa67801267c4c54443e110",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrentdownload.yml"
+    },
+    {
+      "id": "torrentdownloads",
+      "path": "definitions/torrentdownloads.yml",
+      "sha256": "2577639e7997935e6f664faefd2d0916206579934fc937bff1370352a4c099ae",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrentdownloads.yml"
+    },
+    {
+      "id": "torrenteros-api",
+      "path": "definitions/torrenteros-api.yml",
+      "sha256": "2928bb46bf24a8ce6c8d7a6dc627106bc1c6621b52d216948d2036a15a44b41f",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrenteros-api.yml"
+    },
+    {
+      "id": "torrentgalaxyclone",
+      "path": "definitions/torrentgalaxyclone.yml",
+      "sha256": "1043ee417b997aae4c2a9a1803458fbc3c1a69ba2589b9df6892864aacc77815",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrentgalaxyclone.yml"
+    },
+    {
+      "id": "torrenthaven-api",
+      "path": "definitions/torrenthaven-api.yml",
+      "sha256": "354bc189e6d2a9eb4018fd41312d7b3313db4eb83eb1a007f3fa6587e07593c7",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrenthaven-api.yml"
+    },
+    {
+      "id": "torrenthr-api",
+      "path": "definitions/torrenthr-api.yml",
+      "sha256": "4adbc12813df4c93189f8406a835b474e70cf0091b3a3c410ce9a52d05e9cd13",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrenthr-api.yml"
+    },
+    {
+      "id": "torrenting",
+      "path": "definitions/torrenting.yml",
+      "sha256": "e9442840370a0416f9c292aa9eeb1f7a94cff60761931a57d67a8a41caadd752",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrenting.yml"
+    },
+    {
+      "id": "torrentkitty",
+      "path": "definitions/torrentkitty.yml",
+      "sha256": "e685f4feb6b7196c1b6c2771ce5b20f52706401bf8b5e3c6cd74e040c5a70352",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrentkitty.yml"
+    },
+    {
+      "id": "torrentleech",
+      "path": "definitions/torrentleech.yml",
+      "sha256": "c9c57be50cee82221bbf45f7a583dde0388c55dd98a5219182e0e3e5404dde4c",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrentleech.yml"
+    },
+    {
+      "id": "torrentlt",
+      "path": "definitions/torrentlt.yml",
+      "sha256": "dfb825c434253b2abeaebf19bfcfd17677171e222258d6f281e2e2d59856b36f",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrentlt.yml"
+    },
+    {
+      "id": "torrentmasters",
+      "path": "definitions/torrentmasters.yml",
+      "sha256": "c6806b135593f05de5c45fe7dedf644345d16597f2e4097c4b52209fc9b1f57c",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrentmasters.yml"
+    },
+    {
+      "id": "torrentoyunindir",
+      "path": "definitions/torrentoyunindir.yml",
+      "sha256": "1db114c7cdabefe96f220cba247228a63453ece3a3af8c31cddb464021c9bc16",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrentoyunindir.yml"
+    },
+    {
+      "id": "torrentproject2",
+      "path": "definitions/torrentproject2.yml",
+      "sha256": "273c57bab9080dfe927874d351197f603e309bcd3ea9582d03d8dd2975a1ff92",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrentproject2.yml"
+    },
+    {
+      "id": "torrentsome",
+      "path": "definitions/torrentsome.yml",
+      "sha256": "4ea58e85201fe99cd2010c50987b7089a053fe6f93c34bd097dec2da17992f12",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrentsome.yml"
+    },
+    {
+      "id": "torrenttip",
+      "path": "definitions/torrenttip.yml",
+      "sha256": "a8649cc2543d6e3ce0c20336121feac0dee5ae4cf008383869f0cd5d45c7f60f",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrenttip.yml"
+    },
+    {
+      "id": "torrenttrader",
+      "path": "definitions/torrenttrader.yml",
+      "sha256": "cc01a06b8fdf1dc27ab006a7739ef21036603e917ac22de962d284265aa3c2a4",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/torrenttrader.yml"
+    },
+    {
+      "id": "totheglory",
+      "path": "definitions/totheglory.yml",
+      "sha256": "60c4436cf7a65ccacd34cc9acefcec85a7d2df1e91547b85ffe91b4042aa6bb1",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/totheglory.yml"
+    },
+    {
+      "id": "totheglory2fa",
+      "path": "definitions/totheglory2fa.yml",
+      "sha256": "f6b39357eced8049fc6252ca63f79445b2eac70d9eea5ed59bd6c1bddb906975",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/totheglory2fa.yml"
+    },
+    {
+      "id": "tr4ker",
+      "path": "definitions/tr4ker.yml",
+      "sha256": "1d246a0dc5419551e9db440ecc11a119aa95732694bdc381b0d06d871e2b8584",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/tr4ker.yml"
+    },
+    {
+      "id": "trackermk",
+      "path": "definitions/trackermk.yml",
+      "sha256": "b231815fc6fede2018b11239dc761def77a96fee990653386378659e4d9a68ec",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/trackermk.yml"
+    },
+    {
+      "id": "trackerzero",
+      "path": "definitions/trackerzero.yml",
+      "sha256": "d25c506e769e92ccc6b14e6ba65aafaaab9c47fbf1e8d6e2bbb6a005f2ebc8b9",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/trackerzero.yml"
+    },
+    {
+      "id": "traht",
+      "path": "definitions/traht.yml",
+      "sha256": "11849412a295176aa7eb7ec5f297b888ca1edf313e16b666b2829334d10df145",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/traht.yml"
+    },
+    {
+      "id": "trancetraffic",
+      "path": "definitions/trancetraffic.yml",
+      "sha256": "e529f3a6180d7db2ccc11a0b224d318febd90416e4a825813fcfc1c60c7c97e6",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/trancetraffic.yml"
+    },
+    {
+      "id": "trezzor",
+      "path": "definitions/trezzor.yml",
+      "sha256": "b609625cad3fb29d9c53d2a3add831203315e0416f86af42b02085d61547c469",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/trezzor.yml"
+    },
+    {
+      "id": "trezzorcookie",
+      "path": "definitions/trezzorcookie.yml",
+      "sha256": "4ec71113c1f397ebafb7f9e9e90a446bbd528481115374b3f35da961c6164322",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/trezzorcookie.yml"
+    },
+    {
+      "id": "tribalmixes",
+      "path": "definitions/tribalmixes.yml",
+      "sha256": "6aa4046d1b784685bff80cab1edd703db3743e1f6a051563c4f90f9c7dea846f",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/tribalmixes.yml"
+    },
+    {
+      "id": "turkseed-api",
+      "path": "definitions/turkseed-api.yml",
+      "sha256": "f7314d12acd73828ee1b6b5b42c9a4fcdfd21e40a76b74db51877d04156f1270",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/turkseed-api.yml"
+    },
+    {
+      "id": "turktorrent",
+      "path": "definitions/turktorrent.yml",
+      "sha256": "11b41ea5d0f6ba8467e7f50138a5eed0e0c755ef027c08218139d51d14797d1b",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/turktorrent.yml"
+    },
+    {
+      "id": "u2",
+      "path": "definitions/u2.yml",
+      "sha256": "f58ecdcf74cd5cbf7a15c3605b6d6a005bad298cabf7af68324cb4d7a6bebdcf",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/u2.yml"
+    },
+    {
+      "id": "u2p",
+      "path": "definitions/u2p.yml",
+      "sha256": "ccc04b43a77127fa7d908e8e16231eef99587e72671858913de5bb692a042602",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/u2p.yml"
+    },
+    {
+      "id": "u3c3",
+      "path": "definitions/u3c3.yml",
+      "sha256": "15cb34642a8801a6d3b1045bf71020b8791f17dbe68ecbc35772461ef022ba54",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/u3c3.yml"
+    },
+    {
+      "id": "ubits",
+      "path": "definitions/ubits.yml",
+      "sha256": "653bfac7fcd054dabab643c76ae115ba11efe8e8daf4ff9c3ae17532cce02646",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ubits.yml"
+    },
+    {
+      "id": "uindex",
+      "path": "definitions/uindex.yml",
+      "sha256": "e534e0ae9378175e0ac98bee26db1b77e57e8556641509b316706f799c2f51e0",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/uindex.yml"
+    },
+    {
+      "id": "ultrabits-api",
+      "path": "definitions/ultrabits-api.yml",
+      "sha256": "c8ae3ad04f6524303c797d09b3c47e09598ab7a2fee136ebd01737502831a0d5",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ultrabits-api.yml"
+    },
+    {
+      "id": "ultrahd",
+      "path": "definitions/ultrahd.yml",
+      "sha256": "07b30d5c23a4cc3165b01eff74f4f7f84841828b9e308ae346a0b52a46547b72",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ultrahd.yml"
+    },
+    {
+      "id": "unbreakable",
+      "path": "definitions/unbreakable.yml",
+      "sha256": "b3b65e990adb8a2fc7ee84a76fcc505b9fbbd8737f826f0ad7a27b650c5e4f88",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/unbreakable.yml"
+    },
+    {
+      "id": "unionfansub",
+      "path": "definitions/unionfansub.yml",
+      "sha256": "9b7fadd6587ba096b3e5aac07e083fa4601ba3f4855cf759157bbc8b8217a8b9",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/unionfansub.yml"
+    },
+    {
+      "id": "unlimitz",
+      "path": "definitions/unlimitz.yml",
+      "sha256": "83e907d30d899708f490538ba756566e1a39379914387701ff796cd65cb2920c",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/unlimitz.yml"
+    },
+    {
+      "id": "uploadcx",
+      "path": "definitions/uploadcx.yml",
+      "sha256": "611c79e6648318267aae907c84ddb8e76bebae54c45c861ebccb2bfc0b46af38",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/uploadcx.yml"
+    },
+    {
+      "id": "upscalevault-api",
+      "path": "definitions/upscalevault-api.yml",
+      "sha256": "af50186ee084eb1b9913493d1a1a87d8562834eaff771ed139b390a25bb3c75e",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/upscalevault.yml"
+    },
+    {
+      "id": "utopia",
+      "path": "definitions/utopia.yml",
+      "sha256": "94853bd469dd97a9a036cd9314d5a95be5c1766d92e2fe567966e8ec6267706d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/utopia.yml"
+    },
+    {
+      "id": "uztracker",
+      "path": "definitions/uztracker.yml",
+      "sha256": "0bdef6a870de57e2a4b57dac526ac75ac319fd03b143f941bf4e7587c235c936",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/uztracker.yml"
+    },
+    {
+      "id": "v3x",
+      "path": "definitions/v3x.yml",
+      "sha256": "61f5f6cd4939fa0576206e607e7d4bff4e6ba4f0f0a96730381416025d13100f",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/v3x.yml"
+    },
+    {
+      "id": "vault-network",
+      "path": "definitions/vault-network.yml",
+      "sha256": "8ff6a6c8317542413b6994ffb65bc6db3df608325aa09459354e9a47174f965e",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/vault-network.yml"
+    },
+    {
+      "id": "vc-lib",
+      "path": "definitions/vc-lib.yml",
+      "sha256": "d68d394175d77da9d124ce20137a827112514814c2e37a896411cc70837d94a4",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/vc-lib.yml"
+    },
+    {
+      "id": "vietmediaf",
+      "path": "definitions/vietmediaf.yml",
+      "sha256": "d3616e6a0e7eb9097df78764c27207efc107543450583025e8981145facd3be1",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/vietmediaf.yml"
+    },
+    {
+      "id": "vsthouse",
+      "path": "definitions/vsthouse.yml",
+      "sha256": "ded38735974361065a6bd67202a20dabc5194d3a8b421651659795854c0c2f67",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/vsthouse.yml"
+    },
+    {
+      "id": "vstorrent",
+      "path": "definitions/vstorrent.yml",
+      "sha256": "91ce85d37d04c14ed4390cfbd108a7907f4c976cf764b05e62ed3b7269570b96",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/vstorrent.yml"
+    },
+    {
+      "id": "vsttorrents",
+      "path": "definitions/vsttorrents.yml",
+      "sha256": "cc2eaa6dac6157a7e7f701327ebaa244ecb2e5dca97741436737b7c7827001af",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/vsttorrents.yml"
+    },
+    {
+      "id": "whiteangel",
+      "path": "definitions/whiteangel.yml",
+      "sha256": "e0d615a9e62a495fbf1f52273ac6796b012f34b57ded54aa8acf616587e1fac6",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/whiteangel.yml"
+    },
+    {
+      "id": "wihd",
+      "path": "definitions/wihd.yml",
+      "sha256": "adbcfcc3e23f7b703a876c87d9d31c9c012aef8a1bb3aa0665d80cf6bbb0c884",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/wihd.yml"
+    },
+    {
+      "id": "wintersakura",
+      "path": "definitions/wintersakura.yml",
+      "sha256": "2236a8e61aa8a3010e9bd2452a84a847f48239f4498bd814f3b8615ea825c7cc",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/wintersakura.yml"
+    },
+    {
+      "id": "world-of-tomorrow",
+      "path": "definitions/world-of-tomorrow.yml",
+      "sha256": "a3130d40ba07e4101390c39a24dbe2eae964df61ee29d53a26601a6289a450d0",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/world-of-tomorrow.yml"
+    },
+    {
+      "id": "world-torrent",
+      "path": "definitions/world-torrent.yml",
+      "sha256": "6d0a409ceabd4d909e2dd684dca794f750c49edcc04630e65cea5e490652548f",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/world-torrent.yml"
+    },
+    {
+      "id": "xdy",
+      "path": "definitions/xdy.yml",
+      "sha256": "0720957923a7d1555d1d220541ae648255cc765c0068a37e25516ac2c0ba112c",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/xdy.yml"
+    },
+    {
+      "id": "xingtan",
+      "path": "definitions/xingtan.yml",
+      "sha256": "ce82f06999f24da1b3cee6f2b87b9af09369504bee1d51e91a229a63f998dc61",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/xingtan.yml"
+    },
+    {
+      "id": "xingwan",
+      "path": "definitions/xingwan.yml",
+      "sha256": "b27cf22d4cd29d96377f03ba2e9bab6f3df46b8c851476aa63396c233bbc50a0",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/xingwan.yml"
+    },
+    {
+      "id": "xingyung",
+      "path": "definitions/xingyung.yml",
+      "sha256": "1d6b4e9fcc7e4238b3ac65545abbe1b88c473a6ac7ae08c71cebcf08fa99a4de",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/xingyung.yml"
+    },
+    {
+      "id": "xloli",
+      "path": "definitions/xloli.yml",
+      "sha256": "512ae0c92c6ecfbe9bc703b95aa709793fa9d30db47241938ef4c6263d6ccc95",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/xloli.yml"
+    },
+    {
+      "id": "xtorrenty",
+      "path": "definitions/xtorrenty.yml",
+      "sha256": "f5c6611a266fbe103fca7b3ee892d76b107f9fc3b3d198e876641531ce0ccaa5",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/xtorrenty.yml"
+    },
+    {
+      "id": "xtremebytes",
+      "path": "definitions/xtremebytes.yml",
+      "sha256": "241253d38595c84307e75927eee0fbc576807aa935f4a4f23ed7c115c0af2acf",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/xtremebytes.yml"
+    },
+    {
+      "id": "xwtclassics",
+      "path": "definitions/xwtclassics.yml",
+      "sha256": "9a6dc03aa5b4257f7efad89c858f17aef5a5b583e6d59d0e2b308bcdfed06760",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/xwtclassics.yml"
+    },
+    {
+      "id": "xwtclassics2fa",
+      "path": "definitions/xwtclassics2fa.yml",
+      "sha256": "45b5f0140c6cef45ff17beb309310d468cf2b44032dc4fb69aa0be122b18c277",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/xwtclassics2fa.yml"
+    },
+    {
+      "id": "xwtorrents",
+      "path": "definitions/xwtorrents.yml",
+      "sha256": "6e2985b5b3ce817b91a8bca1b18dbaff3695e8a66bad5f4c0d9217cbdcafcb18",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/xwtorrents.yml"
+    },
+    {
+      "id": "xwtorrents2fa",
+      "path": "definitions/xwtorrents2fa.yml",
+      "sha256": "0f434f50d360e7878886e665c345ba9e7846cdc661e99dcfff0f9c1289005522",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/xwtorrents2fa.yml"
+    },
+    {
+      "id": "xxxclub",
+      "path": "definitions/xxxclub.yml",
+      "sha256": "47387c0c9c7f0b36b2f403a6200ce00531e456a11a79fe3b476402f74c8af70c",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/xxxclub.yml"
+    },
+    {
+      "id": "xxxtor",
+      "path": "definitions/xxxtor.yml",
+      "sha256": "78ba94d3ecc7af14157ad00182ec61d654dfa2f282b5f6e910de4f411d2ecb4c",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/xxxtor.yml"
+    },
+    {
+      "id": "yggreborn-api",
+      "path": "definitions/yggreborn-api.yml",
+      "sha256": "9ec2d4e4d46f38799c6e3dbb2121c55f0947b8957870fe4419ab784fa4906fa9",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/yggreborn-api.yml"
+    },
+    {
+      "id": "yts",
+      "path": "definitions/yts.yml",
+      "sha256": "32d614742b051a20e3532c6e4a3627ffb0ce0b30b195d68df3b46a62c490f47f",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/yts.yml"
+    },
+    {
+      "id": "yuscene-api",
+      "path": "definitions/yuscene-api.yml",
+      "sha256": "7675d216e13d9f87868bb254389f86abe05bd9fad623061e312ad65b2a32e121",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/yuscene-api.yml"
+    },
+    {
+      "id": "zamundarip",
+      "path": "definitions/zamundarip.yml",
+      "sha256": "b43efe712ae5bbe3f07bbc47186c7a7d97107794fe013da1287d2c235d59e6a9",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/zamundarip.yml"
+    },
+    {
+      "id": "zappateers",
+      "path": "definitions/zappateers.yml",
+      "sha256": "0c8b42012e47c697bec19575708c08f233d4269a1356c73943bc9b5b6d00e81d",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/zappateers.yml"
+    },
+    {
+      "id": "zenith",
+      "path": "definitions/zenith.yml",
+      "sha256": "d877f2d31e85c39ac3243a6a7e43cf433db45c68420d3ba8197c47ad0e9ce905",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/zenith.yml"
+    },
+    {
+      "id": "zmpt",
+      "path": "definitions/zmpt.yml",
+      "sha256": "af4c792f6d2f0fb7877b26f3b823657e11a5c46840053a9df91468f2db8a2192",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/zmpt.yml"
+    },
+    {
+      "id": "zrpt",
+      "path": "definitions/zrpt.yml",
+      "sha256": "1125c24c6a89ef07b66564fa33eae1d50c5f0d741e271d086c8833364d670ef2",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/zrpt.yml"
+    },
+    {
+      "id": "ztracker",
+      "path": "definitions/ztracker.yml",
+      "sha256": "5227007bdc7d4b9e74d1fc7fb753869a3811b5f0de4b2d706390cb8a0ee0bc28",
+      "sourceProject": "jackett",
+      "sourcePath": "src/Jackett.Common/Definitions/ztracker.yml"
+    }
+  ]
+}

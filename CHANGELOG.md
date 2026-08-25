@@ -9,4 +9,12 @@ and schema/tooling releases follow [Semantic Versioning](https://semver.org/).
 
 ### Added
 
-- Initial `indexloom.io/v1alpha1` schema, validator, and contribution policy.
+- Deterministic Jackett and Prowlarr Cardigann converter.
+- Deduplicated catalog manifest with pinned revisions and per-file hashes.
+- Lossless `indexloom.io/v1alpha1` Cardigann implementation envelope.
+- Provenance and reconstructed semantic-content validation.
+
+### Changed
+
+- Definition contributions now use a generated-catalog workflow.
+- Imported definition files retain their `GPL-2.0-only` source license.
