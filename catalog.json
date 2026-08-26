@@ -523,7 +523,7 @@
     {
       "id": "btarg",
       "path": "definitions/btarg.yml",
-      "sha256": "534fd6b06a4f372f039b11e4985fe48507376f5e924f49898f60ed1430eca184",
+      "sha256": "458312b9836bf270709e304effa051b8297e92454d0d7cbf7280c9fe1e5f9f25",
       "sourceProject": "jackett",
       "sourcePath": "src/Jackett.Common/Definitions/btarg.yml"
     },
@@ -2084,14 +2084,14 @@
     {
       "id": "mvgroupforum",
       "path": "definitions/mvgroupforum.yml",
-      "sha256": "9156cdf6d3a932b1d9ab4641e5c2209e72cebfc2c6aa1d0c016662a24aafbe9e",
+      "sha256": "f6743c224f4151f2b536f25e794af7549f743968b7bee4a03ef7466ad75b4eb8",
       "sourceProject": "jackett",
       "sourcePath": "src/Jackett.Common/Definitions/mvgroupforum.yml"
     },
     {
       "id": "mvgroupmain",
       "path": "definitions/mvgroupmain.yml",
-      "sha256": "c970083bbe66b1512d728b21d4e2f61e539a155931494e5d757ff2414d98ce5b",
+      "sha256": "2f4c91576780f328b3ddd05d06b246effe7b3b946cb115e1f4de4c9b90ceabbe",
       "sourceProject": "jackett",
       "sourcePath": "src/Jackett.Common/Definitions/mvgroupmain.yml"
     },
@@ -2252,7 +2252,7 @@
     {
       "id": "nyaasi",
       "path": "definitions/nyaasi.yml",
-      "sha256": "b0d09bcb6a304332bd5310909a923aa197e0467d9b8deec3792d764fe81b0d09",
+      "sha256": "cfe110c5d00b0f5027ae641c70a58d43f710715f61f9cba4ce5b0e9da61e2bad",
       "sourceProject": "jackett",
       "sourcePath": "src/Jackett.Common/Definitions/nyaasi.yml"
     },
@@ -3057,7 +3057,7 @@
     {
       "id": "sukebeinyaasi",
       "path": "definitions/sukebeinyaasi.yml",
-      "sha256": "95508a1c93f331903021ac0aac79679c9169287818095697d352bbe8de0451d5",
+      "sha256": "8e8af8e3b18bcbfc2af5fbfa32baba6ad69bb8af4006f985dc3f89fbcf42059e",
       "sourceProject": "jackett",
       "sourcePath": "src/Jackett.Common/Definitions/sukebeinyaasi.yml"
     },

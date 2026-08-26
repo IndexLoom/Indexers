@@ -19,7 +19,7 @@ provenance:
     sourceId: mvgroupmain
     license: GPL-2.0-only
     fileSha256: d35e23362a43838e695d2ef94489b85d3a8f4e53e983c5c94910ed8e620e8d36
-    contentSha256: c20e55c6d744f72294c64c5a4ded2631fffcea210741d578f06434310edb67d1
+    contentSha256: 5d776fc2dc04e946128ad1bca41a9125a30be3f1d5ff8020003ced01dbcb4cdd
 spec:
   protocol: torrent
   privacy: semi-private
@@ -149,7 +149,7 @@ spec:
         PassWord: '{{ .Config.password }}'
         Privacy: 1
         CookieDate: 1
-        CODE: 1
+        CODE: '01'
         referer: https://forums.mvgroup.org/index.php?
         act: Login
       error:

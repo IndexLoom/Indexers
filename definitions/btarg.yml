@@ -18,7 +18,7 @@ provenance:
     sourceId: btarg
     license: GPL-2.0-only
     fileSha256: 9866ac4b41ec2faa70849c6defd956c46262ddbadda9edd814d3a3ee947541ea
-    contentSha256: ba493a47ed2f8e1b866b4b8ba6406fc721d8afcfc57deafe94dd49dab2297dbe
+    contentSha256: 8d91648cd36ecebf7c763dd008cf0b982fbaec7a6f0192e7310461c6c9a5cd25
 spec:
   protocol: torrent
   privacy: private
@@ -29,25 +29,25 @@ spec:
     encoding: iso-8859-1
     capabilities:
       categorymappings:
-      - id: 1
+      - id: '01'
         cat: Movies
         desc: Cine Arg.
-      - id: 2
+      - id: '02'
         cat: Movies/Foreign
         desc: Cine Int.
-      - id: 3
+      - id: '03'
         cat: TV
         desc: TV Arg.
-      - id: 4
+      - id: '04'
         cat: TV/Foreign
         desc: TV Int.
-      - id: 5
+      - id: '05'
         cat: XXX
         desc: XXX
-      - id: 6
+      - id: '06'
         cat: TV/Anime
         desc: Anime
-      - id: 7
+      - id: '07'
         cat: TV/Sport
         desc: Deportes
       - id: 08

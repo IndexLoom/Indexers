@@ -18,7 +18,7 @@ provenance:
     sourceId: nyaasi
     license: GPL-2.0-only
     fileSha256: cea7a06c93abbc46dbb1eb0d74d34dfeca1f244f3f7ffe08a1d6335d6400687b
-    contentSha256: 4732a31d24697fbf0bd6be1ef4e430f9e0968a44088633869afcda5f066c94e9
+    contentSha256: 7e352071490afdf87de17d5a193c62566caa2d3e10e09ebd55d13a1505042f85
 spec:
   protocol: torrent
   privacy: public
@@ -48,88 +48,88 @@ spec:
     requestDelaySeconds: 2
     capabilities:
       categorymappings:
-      - id: 10
+      - id: '1_0'
         cat: TV/Anime
         desc: Anime
-      - id: 11
+      - id: '1_1'
         cat: TV/Anime
         desc: Anime - Anime Music Video
-      - id: 12
+      - id: '1_2'
         cat: TV/Anime
         desc: Anime - English-translated
-      - id: 13
+      - id: '1_3'
         cat: TV/Anime
         desc: Anime - Non-English-translated
-      - id: 14
+      - id: '1_4'
         cat: TV/Anime
         desc: Anime - Raw
-      - id: 10
+      - id: '1_0'
         cat: Movies/Other
         desc: Anime
-      - id: 11
+      - id: '1_1'
         cat: Movies/Other
         desc: Anime - Anime Music Video
-      - id: 12
+      - id: '1_2'
         cat: Movies/Other
         desc: Anime - English-translated
-      - id: 13
+      - id: '1_3'
         cat: Movies/Other
         desc: Anime - Non-English-translated
-      - id: 14
+      - id: '1_4'
         cat: Movies/Other
         desc: Anime - Raw
-      - id: 20
+      - id: '2_0'
         cat: Audio
         desc: Audio
-      - id: 21
+      - id: '2_1'
         cat: Audio
         desc: Audio - Lossless
-      - id: 22
+      - id: '2_2'
         cat: Audio
         desc: Audio - Lossy
-      - id: 30
+      - id: '3_0'
         cat: Books
         desc: Literature
-      - id: 31
+      - id: '3_1'
         cat: Books
         desc: Literature  English-translated
-      - id: 32
+      - id: '3_2'
         cat: Books
         desc: Literature - Non-English-translated
-      - id: 33
+      - id: '3_3'
         cat: Books
         desc: Literature - Raw
-      - id: 40
+      - id: '4_0'
         cat: TV
         desc: Live Action
-      - id: 41
+      - id: '4_1'
         cat: TV
         desc: Live Action - English-translated
-      - id: 42
+      - id: '4_2'
         cat: TV
         desc: Live Action - Idol/Promotional Video
-      - id: 43
+      - id: '4_3'
         cat: TV
         desc: Live Action - Non-English-translated
-      - id: 44
+      - id: '4_4'
         cat: TV
         desc: Live Action - Raw
-      - id: 50
+      - id: '5_0'
         cat: Other
         desc: Pictures
-      - id: 51
+      - id: '5_1'
         cat: Other
         desc: Pictures - Graphics
-      - id: 52
+      - id: '5_2'
         cat: Other
         desc: Pictures - Photos
-      - id: 60
+      - id: '6_0'
         cat: PC
         desc: Software
-      - id: 61
+      - id: '6_1'
         cat: PC/ISO
         desc: Software - Applications
-      - id: 62
+      - id: '6_2'
         cat: PC/Games
         desc: Software - Games
       modes:
@@ -174,32 +174,32 @@ spec:
     - name: cat-id
       type: select
       label: Category
-      default: 0
+      default: '0_0'
       options:
-        0: All categories
-        10: Anime
-        11: Anime - Anime Music Video
-        12: Anime - English-translated
-        13: Anime - Non-English-translated
-        14: Anime - Raw
-        20: Audio
-        21: Audio - Lossless
-        22: Audio - Lossy
-        30: Literature
-        31: Literature - English-translated
-        32: Literature - Non-English-translated
-        33: Literature - Lossy
-        40: Live Action
-        41: Live Action - English
-        42: Live Action - Idol/PV
-        43: Live Action - Non-English
-        44: Live Action - Raw
-        50: Pictures
-        51: Pictures  - Graphics
-        52: Pictures  - Photos
-        60: Software
-        61: Software - Applications
-        62: Software - Games
+        '0_0': All categories
+        '1_0': Anime
+        '1_1': Anime - Anime Music Video
+        '1_2': Anime - English-translated
+        '1_3': Anime - Non-English-translated
+        '1_4': Anime - Raw
+        '2_0': Audio
+        '2_1': Audio - Lossless
+        '2_2': Audio - Lossy
+        '3_0': Literature
+        '3_1': Literature - English-translated
+        '3_2': Literature - Non-English-translated
+        '3_3': Literature - Lossy
+        '4_0': Live Action
+        '4_1': Live Action - English
+        '4_2': Live Action - Idol/PV
+        '4_3': Live Action - Non-English
+        '4_4': Live Action - Raw
+        '5_0': Pictures
+        '5_1': Pictures  - Graphics
+        '5_2': Pictures  - Photos
+        '6_0': Software
+        '6_1': Software - Applications
+        '6_2': Software - Games
     - name: sort
       type: select
       label: Sort requested from site
