@@ -19,7 +19,7 @@ ROOT = Path(os.environ.get("INDEXLOOM_CATALOG_ROOT", CODE_ROOT))
 SCHEMA_PATH = CODE_ROOT / "schema" / "v1alpha1" / "indexer.schema.json"
 MANIFEST_PATH = ROOT / "catalog.json"
 DEFINITIONS = ROOT / "definitions"
-EXAMPLES = CODE_ROOT / "examples"
+EXAMPLES = ROOT / "examples"
 
 
 def definition_paths(directory: Path) -> Iterable[Path]:
