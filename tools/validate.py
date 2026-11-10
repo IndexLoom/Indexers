@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import os
 import sys
 from collections.abc import Iterable
 from pathlib import Path
@@ -13,11 +14,12 @@ import yaml
 from import_upstreams import GENERATED_MARKER, Yaml12Loader, canonical_json, sha256
 from jsonschema import Draft202012Validator, FormatChecker
 
-ROOT = Path(__file__).resolve().parents[1]
-SCHEMA_PATH = ROOT / "schema" / "v1alpha1" / "indexer.schema.json"
+CODE_ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(os.environ.get("INDEXLOOM_CATALOG_ROOT", CODE_ROOT))
+SCHEMA_PATH = CODE_ROOT / "schema" / "v1alpha1" / "indexer.schema.json"
 MANIFEST_PATH = ROOT / "catalog.json"
 DEFINITIONS = ROOT / "definitions"
-EXAMPLES = ROOT / "examples"
+EXAMPLES = CODE_ROOT / "examples"
 
 
 def definition_paths(directory: Path) -> Iterable[Path]:

@@ -413,7 +413,7 @@ def write_catalog(
         entries.append(
             {
                 "id": candidate.canonical_id,
-                "path": target.relative_to(ROOT).as_posix(),
+                "path": target.relative_to(output.parent).as_posix(),
                 "sha256": sha256(rendered),
                 "sourceProject": candidate.project,
                 "sourcePath": candidate.relative_path,

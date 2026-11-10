@@ -1,0 +1,112 @@
+name: Build and release Indexers database
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/**"
+      - "schema/**"
+      - "examples/**"
+      - "tests/**"
+      - "pyproject.toml"
+      - "uv.lock"
+      - ".github/workflows/release-catalog.yml"
+  schedule:
+    - cron: "19 4 * * *"
+  workflow_dispatch:
+    inputs:
+      force_release:
+        description: Publish even if the upstream revisions and builder commit have not changed
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: indexers-release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.11.21"
+          enable-cache: true
+      - run: uv python install 3.13
+      - run: uv sync --frozen --python 3.13
+      - run: sudo apt-get update && sudo apt-get install -y zstd
+      - name: Fetch current upstream source snapshots
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/upstreams"
+          git clone --depth 1 --filter=blob:none https://github.com/Jackett/Jackett.git "$RUNNER_TEMP/upstreams/Jackett"
+          git clone --depth 1 --filter=blob:none https://github.com/Prowlarr/Indexers.git "$RUNNER_TEMP/upstreams/Prowlarr-Indexers"
+          echo "JACKETT_SHA=$(git -C "$RUNNER_TEMP/upstreams/Jackett" rev-parse HEAD)" >> "$GITHUB_ENV"
+          echo "PROWLARR_SHA=$(git -C "$RUNNER_TEMP/upstreams/Prowlarr-Indexers" rev-parse HEAD)" >> "$GITHUB_ENV"
+      - name: Check whether a release is needed
+        id: needed
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FORCE_RELEASE: ${{ inputs.force_release || 'false' }}
+        run: |
+          set -euo pipefail
+          SHOULD_RELEASE=true
+          if gh release download --repo "$GITHUB_REPOSITORY" --pattern manifest.json --dir "$RUNNER_TEMP/previous" 2>/dev/null; then
+            if uv run --python 3.13 python - "$RUNNER_TEMP/previous/manifest.json" <<'PY'
+          import json, os, sys
+          previous = json.load(open(sys.argv[1], encoding="utf-8"))
+          same = previous.get("builderRevision") == os.environ["GITHUB_SHA"]
+          same &= previous.get("sourceRevisions", {}).get("jackett") == os.environ["JACKETT_SHA"]
+          same &= previous.get("sourceRevisions", {}).get("prowlarr-indexers") == os.environ["PROWLARR_SHA"]
+          sys.exit(0 if same else 1)
+          PY
+            then
+              SHOULD_RELEASE=false
+            fi
+          fi
+          if [[ "$FORCE_RELEASE" == "true" ]]; then SHOULD_RELEASE=true; fi
+          echo "publish=$SHOULD_RELEASE" >> "$GITHUB_OUTPUT"
+      - name: Convert upstream definitions (intermediate files are never committed)
+        if: steps.needed.outputs.publish == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          uv run --python 3.13 python tools/import_upstreams.py \
+            --jackett-root "$RUNNER_TEMP/upstreams/Jackett" --jackett-revision "$JACKETT_SHA" \
+            --prowlarr-root "$RUNNER_TEMP/upstreams/Prowlarr-Indexers" --prowlarr-revision "$PROWLARR_SHA" \
+            --output "$RUNNER_TEMP/catalog/definitions" --manifest "$RUNNER_TEMP/catalog/catalog.json"
+          INDEXLOOM_CATALOG_ROOT="$RUNNER_TEMP/catalog" uv run --python 3.13 python tools/validate.py
+      - name: Produce SQLite and compressed exports
+        if: steps.needed.outputs.publish == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          uv run --python 3.13 python tools/build_database.py \
+            --definitions "$RUNNER_TEMP/catalog/definitions" \
+            --catalog "$RUNNER_TEMP/catalog/catalog.json" \
+            --output "$RUNNER_TEMP/dist" --builder-revision "$GITHUB_SHA"
+          (cd "$RUNNER_TEMP/dist" && sha256sum -c SHA256SUMS)
+          zstd --test "$RUNNER_TEMP/dist/indexers.db.zst"
+      - name: Publish immutable release
+        if: steps.needed.outputs.publish == 'true'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          BASE="v$(date -u +%Y.%m.%d)"
+          NUMBER=1
+          while gh release view "$BASE.$NUMBER" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; do
+            NUMBER=$((NUMBER + 1))
+          done
+          TAG="$BASE.$NUMBER"
+          gh release create "$TAG" "$RUNNER_TEMP/dist/"* \
+            --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
+            --title "Indexers $TAG" \
+            --notes "Reproducible catalog database and compressed exports. Upstreams: Jackett $JACKETT_SHA; Prowlarr/Indexers $PROWLARR_SHA. See manifest.json and SHA256SUMS."
