@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import gzip
 import hashlib
 import json
 import shutil
@@ -248,11 +249,16 @@ def build(catalog_dir: Path, catalog: Path, output: Path, revision: str) -> dict
                 canonical_json(data),
             ))
     compressed = [compress(db_path), compress(jsonl), compress(tsv)]
-    # Only the compressed text exports are distributed; SQLite is available in both variants.
+    # Gzip is a transport-only stream for IndexLoom's Rust runtime: the same
+    # canonical records are also available as zstd and full SQLite assets.
+    gzip_path = output / "indexers.jsonl.gz"
+    with jsonl.open("rb") as original, gzip_path.open("wb") as raw:
+        with gzip.GzipFile(filename="", fileobj=raw, mode="wb", mtime=0, compresslevel=9) as packed:
+            shutil.copyfileobj(original, packed)
     jsonl.unlink()
     tsv.unlink()
     source_revisions = {item["project"]: item["revision"] for item in input_catalog["sources"]}
-    assets = [db_path, *compressed]
+    assets = [db_path, gzip_path, *compressed]
     asset_info = {
         path.name: {"sha256": sha256(path.read_bytes()), "bytes": path.stat().st_size}
         for path in sorted(assets)

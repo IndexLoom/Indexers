@@ -50,7 +50,7 @@ class DatabaseReleaseTests(unittest.TestCase):
             finally:
                 db.close()
             self.assertEqual(set(release["assets"]), {
-                "indexers.db", "indexers.db.zst", "indexers.jsonl.zst", "indexers.tsv.zst"
+                "indexers.db", "indexers.db.zst", "indexers.jsonl.gz", "indexers.jsonl.zst", "indexers.tsv.zst"
             })
             for name, asset in release["assets"].items():
                 self.assertEqual(hashlib.sha256((root / "dist" / name).read_bytes()).hexdigest(),
