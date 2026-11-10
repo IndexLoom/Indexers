@@ -4,8 +4,7 @@ Thank you for improving IndexLoom's definition catalog.
 
 ## Generated definitions
 
-Files in `definitions/` are reproducible outputs and must not be edited by
-hand. Fix the licensed upstream definition or the converter, pin the intended
+Files in `definitions/` are temporary generated build outputs and must not be committed or edited by hand. Fix the licensed upstream definition or the converter, pin the intended
 upstream commit, regenerate the complete catalog, and include the resulting
 `catalog.json` update.
 

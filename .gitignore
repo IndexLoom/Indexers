@@ -4,3 +4,10 @@ __pycache__/
 .ruff_cache/
 .pytest_cache/
 .DS_Store
+
+# Generated release inputs and outputs (never commit catalog data)
+/definitions/
+/catalog.json
+/dist/
+/*.db
+/*.zst

@@ -25,3 +25,6 @@ are recorded in each file and in the catalog manifest.
 IndexLoom does not claim authorship of imported definition behavior. The
 conversion adds a versioned envelope and provenance without removing notices
 or changing the license governing the source-derived content.
+
+The source checkout no longer stores generated YAML. Database release records
+retain the same GPL-2.0-only Cardigann provenance and source metadata.

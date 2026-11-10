@@ -7,6 +7,16 @@ and schema/tooling releases follow [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Database-first distribution
+
+- Migrated generated definitions out of Git; releases now provide SQLite,
+  compressed SQLite, JSONL, TSV and a gzip transport export.
+- Added deterministic daily upstream imports, revision checks, per-release
+  manifests and SHA256SUMS.
+- Indexed complete Cardigann settings, capabilities, modes, categories, URLs
+  and provenance while retaining the full original YAML in the database.
+
+
 ### Added
 
 - Deterministic Jackett and Prowlarr Cardigann converter.
