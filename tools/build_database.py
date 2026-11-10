@@ -16,7 +16,10 @@ from pathlib import Path
 from typing import Any
 
 import yaml
-from import_upstreams import Yaml12Loader
+from import_upstreams import (
+    JACKETT_PROJECT, JACKETT_REPOSITORY, PROWLARR_PROJECT, PROWLARR_REPOSITORY,
+    Yaml12Loader, discover,
+)
 
 SCHEMA_ID = "indexloom.io/v1alpha1"
 DISTRIBUTION_FORMAT = "indexloom-indexers/v1"
@@ -90,6 +93,17 @@ def connect_database(path: Path) -> sqlite3.Connection:
             source_id TEXT PRIMARY KEY, canonical_id TEXT NOT NULL REFERENCES definitions(id),
             reason TEXT NOT NULL
         );
+        -- Every upstream variant is retained, including the differences
+        -- discarded by canonical Jackett-first deduplication.
+        CREATE TABLE upstream_variants (
+            project TEXT NOT NULL REFERENCES sources(project),
+            path TEXT NOT NULL, canonical_id TEXT REFERENCES definitions(id),
+            source_id TEXT NOT NULL, revision TEXT NOT NULL,
+            source_sha256 TEXT NOT NULL, selected INTEGER NOT NULL,
+            document_json TEXT NOT NULL, document_yaml TEXT NOT NULL,
+            PRIMARY KEY (project, path)
+        );
+        CREATE INDEX upstream_variants_canonical_idx ON upstream_variants(canonical_id);
         CREATE INDEX definitions_language_idx ON definitions(language);
         CREATE INDEX definitions_privacy_idx ON definitions(privacy);
         CREATE INDEX definitions_source_idx ON definitions(source_project);
@@ -144,7 +158,7 @@ def load_snapshot(directory: Path, catalog_path: Path) -> tuple[dict[str, Any], 
 
 
 def build_database(db_path: Path, manifest: dict[str, Any], records: list[dict[str, Any]],
-                   builder_revision: str) -> dict[str, int]:
+                   builder_revision: str, upstream_roots: dict[str, Path] | None = None) -> dict[str, int]:
     db = connect_database(db_path)
     counts: Counter[str] = Counter()
     try:
@@ -215,6 +229,50 @@ def build_database(db_path: Path, manifest: dict[str, Any], records: list[dict[s
             db.execute("INSERT INTO aliases VALUES (?, ?, ?)",
                        (alias["sourceId"], alias["canonicalId"], alias["reason"]))
         counts["definitions"] = len(records)
+        if upstream_roots:
+            canonical_ids = {record["id"] for record in records}
+            selected_sources = {
+                (record["definition"]["provenance"]["source"]["project"],
+                 record["definition"]["provenance"]["source"]["path"])
+                for record in records
+            }
+            aliases = {
+                item["sourceId"]: item["canonicalId"]
+                for item in manifest.get("deduplication", {}).get("aliases", [])
+            }
+            for source in manifest["sources"]:
+                project = source["project"]
+                root = upstream_roots[project]
+                definition_root = (root / "src/Jackett.Common/Definitions"
+                                   if project == JACKETT_PROJECT else root / "definitions")
+                candidates = discover(
+                    project=project,
+                    repository=source["repository"],
+                    revision=source["revision"],
+                    repository_root=root,
+                    definition_root=definition_root,
+                    recursive=project == PROWLARR_PROJECT,
+                )
+                if len(candidates) != source["discovered"]:
+                    raise ValueError(f"source revision changed during build: {project}")
+                for candidate in candidates:
+                    canonical_id = candidate.canonical_id
+                    if canonical_id not in canonical_ids:
+                        canonical_id = aliases.get(candidate.source_id)
+                    # Not all source definitions must map to an active canonical
+                    # one; nullable identity preserves otherwise orphaned evidence.
+                    if canonical_id not in canonical_ids:
+                        canonical_id = None
+                    selected = int((project, candidate.relative_path) in selected_sources)
+                    db.execute(
+                        "INSERT INTO upstream_variants VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                        (project, candidate.relative_path, canonical_id, candidate.source_id,
+                         source["revision"], sha256(candidate.source_bytes), selected,
+                         canonical_json(candidate.document),
+                         candidate.source_bytes.decode("utf-8-sig")),
+                    )
+                    counts["upstream_variants"] += 1
+                    counts["selected_variants"] += selected
         db.commit()
         if db.execute("PRAGMA integrity_check").fetchone()[0] != "ok":
             raise RuntimeError("SQLite integrity check failed")
@@ -235,11 +293,12 @@ def compress(source: Path) -> Path:
     return target
 
 
-def build(catalog_dir: Path, catalog: Path, output: Path, revision: str) -> dict[str, Any]:
+def build(catalog_dir: Path, catalog: Path, output: Path, revision: str,
+          upstream_roots: dict[str, Path] | None = None) -> dict[str, Any]:
     output.mkdir(parents=True, exist_ok=True)
     input_catalog, records = load_snapshot(catalog_dir, catalog)
     db_path = output / "indexers.db"
-    counts = build_database(db_path, input_catalog, records, revision)
+    counts = build_database(db_path, input_catalog, records, revision, upstream_roots)
     jsonl = output / "indexers.jsonl"
     with jsonl.open("w", encoding="utf-8", newline="\n") as stream:
         for record in records:
@@ -300,8 +359,14 @@ def main() -> int:
     parser.add_argument("--catalog", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--builder-revision", required=True)
+    parser.add_argument("--jackett-root", type=Path)
+    parser.add_argument("--prowlarr-root", type=Path)
     args = parser.parse_args()
-    manifest = build(args.definitions, args.catalog, args.output, args.builder_revision)
+    if bool(args.jackett_root) != bool(args.prowlarr_root):
+        parser.error("both upstream roots must be supplied together")
+    upstreams = ({JACKETT_PROJECT: args.jackett_root, PROWLARR_PROJECT: args.prowlarr_root}
+                 if args.jackett_root else None)
+    manifest = build(args.definitions, args.catalog, args.output, args.builder_revision, upstreams)
     print(json.dumps({"definitionCount": manifest["definitionCount"],
                       "statistics": manifest["statistics"]}, ensure_ascii=False))
     return 0

@@ -90,7 +90,9 @@ jobs:
           uv run --python 3.13 python tools/build_database.py \
             --definitions "$RUNNER_TEMP/catalog/definitions" \
             --catalog "$RUNNER_TEMP/catalog/catalog.json" \
-            --output "$RUNNER_TEMP/dist" --builder-revision "$GITHUB_SHA"
+            --output "$RUNNER_TEMP/dist" --builder-revision "$GITHUB_SHA" \
+            --jackett-root "$RUNNER_TEMP/upstreams/Jackett" \
+            --prowlarr-root "$RUNNER_TEMP/upstreams/Prowlarr-Indexers"
           (cd "$RUNNER_TEMP/dist" && sha256sum -c SHA256SUMS)
           zstd --test "$RUNNER_TEMP/dist/indexers.db.zst"
       - name: Publish immutable release

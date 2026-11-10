@@ -69,6 +69,9 @@ The following tables are available:
 - `configuration_fields` — complete Cardigann configuration settings.
 - `capabilities` — every native capability entry as JSON.
 - `aliases` — recorded cross-ID deduplication aliases.
+- `upstream_variants` — all original Jackett and Prowlarr definitions,
+  including overlapping IDs whose upstream behavior differs. The canonical
+  winner is marked with `selected = 1`.
 - `metadata` — distribution and schema version.
 
 Example:
