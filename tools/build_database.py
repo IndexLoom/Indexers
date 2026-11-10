@@ -22,8 +22,19 @@ SCHEMA_ID = "indexloom.io/v1alpha1"
 DISTRIBUTION_FORMAT = "indexloom-indexers/v1"
 
 
+def json_compatible(value: Any) -> Any:
+    # Cardigann permits integer and string YAML mapping keys in the same map.
+    # JSON requires text keys; the original lossless YAML is retained separately.
+    if isinstance(value, dict):
+        return {str(key): json_compatible(item) for key, item in value.items()}
+    if isinstance(value, list):
+        return [json_compatible(item) for item in value]
+    return value
+
+
 def canonical_json(value: Any) -> str:
-    return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"), default=str)
+    return json.dumps(json_compatible(value), ensure_ascii=False, sort_keys=True,
+                      separators=(",", ":"), default=str)
 
 
 def sha256(data: bytes) -> str:
