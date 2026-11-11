@@ -47,6 +47,14 @@ class DatabaseReleaseTests(unittest.TestCase):
                 self.assertEqual(row[0].encode("utf-8"), source)
                 self.assertEqual(json.loads(row[1])["metadata"]["id"], "example")
                 self.assertEqual(db.execute("SELECT count(*) FROM search_modes").fetchone()[0], 1)
+                self.assertEqual(db.execute("SELECT count(*) FROM search_mode_parameters").fetchone()[0], 1)
+                self.assertEqual(
+                    db.execute("SELECT parameter FROM search_mode_parameters").fetchone()[0], "q"
+                )
+                self.assertEqual(db.execute("SELECT count(*) FROM definition_categories").fetchone()[0], 0)
+                self.assertEqual(
+                    db.execute("SELECT search_path_count FROM definition_features").fetchone()[0], 1
+                )
             finally:
                 db.close()
             self.assertEqual(set(release["assets"]), {

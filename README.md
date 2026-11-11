@@ -66,6 +66,14 @@ The following tables are available:
 - `category_mappings` — source category IDs, categories, descriptions and
   complete per-category objects.
 - `search_modes` — the full set of declared query modes and fields.
+- `search_mode_parameters` — each advertised Cardigann search parameter as a
+  separate position-preserving SQL row; useful for detecting `genre`, `season`,
+  `year`, `imdbid` and related query support.
+- `definition_categories` — normalized searchable categories from native
+  `categories` and `categorymappings`, with origin preserved.
+- `definition_features` — per-definition declaration flags for authentication,
+  CAPTCHA, download handling, genre, raw search and path/URL counts. These
+  flags **do not guarantee** runtime Cardigann compatibility.
 - `configuration_fields` — complete Cardigann configuration settings.
 - `capabilities` — every native capability entry as JSON.
 - `aliases` — recorded cross-ID deduplication aliases.
@@ -81,6 +89,11 @@ SELECT id, name, language, privacy FROM definitions ORDER BY name;
 SELECT source_id, category, description
 FROM category_mappings WHERE definition_id = 'nyaasi';
 SELECT definition_yaml FROM definitions WHERE id = 'nyaasi';
+SELECT d.id, d.name, p.mode FROM definitions d
+JOIN search_mode_parameters p ON p.definition_id = d.id
+WHERE p.parameter = 'genre';
+SELECT definition_id, category FROM definition_categories
+WHERE category LIKE 'TV/%';
 ```
 
 ## Building from upstream sources

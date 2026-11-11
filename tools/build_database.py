@@ -80,6 +80,30 @@ def connect_database(path: Path) -> sqlite3.Connection:
             definition_id TEXT NOT NULL REFERENCES definitions(id), mode TEXT NOT NULL,
             parameters_json TEXT NOT NULL, PRIMARY KEY (definition_id, mode)
         );
+        -- Indexable native categories without losing the original source mapping.
+        CREATE TABLE definition_categories (
+            definition_id TEXT NOT NULL REFERENCES definitions(id),
+            category TEXT NOT NULL, origin TEXT NOT NULL
+                CHECK (origin IN ('categorymappings', 'categories')),
+            PRIMARY KEY (definition_id, category, origin)
+        );
+        CREATE TABLE search_mode_parameters (
+            definition_id TEXT NOT NULL REFERENCES definitions(id),
+            mode TEXT NOT NULL, position INTEGER NOT NULL, parameter TEXT NOT NULL,
+            PRIMARY KEY (definition_id, mode, position),
+            FOREIGN KEY (definition_id, mode) REFERENCES search_modes(definition_id, mode)
+        );
+        -- Statically inferred features. These record declarations, not tested support.
+        CREATE TABLE definition_features (
+            definition_id TEXT PRIMARY KEY REFERENCES definitions(id),
+            has_authentication INTEGER NOT NULL CHECK (has_authentication IN (0, 1)),
+            has_captcha INTEGER NOT NULL CHECK (has_captcha IN (0, 1)),
+            has_download_handler INTEGER NOT NULL CHECK (has_download_handler IN (0, 1)),
+            supports_genre INTEGER NOT NULL CHECK (supports_genre IN (0, 1)),
+            allows_raw_search INTEGER NOT NULL CHECK (allows_raw_search IN (0, 1)),
+            search_path_count INTEGER NOT NULL,
+            alternate_url_count INTEGER NOT NULL
+        );
         CREATE TABLE configuration_fields (
             definition_id TEXT NOT NULL REFERENCES definitions(id), position INTEGER NOT NULL,
             name TEXT, kind TEXT, label TEXT, data_json TEXT NOT NULL,
@@ -110,6 +134,9 @@ def connect_database(path: Path) -> sqlite3.Connection:
         CREATE INDEX category_mappings_category_idx ON category_mappings(category);
         CREATE INDEX category_mappings_source_id_idx ON category_mappings(source_id);
         CREATE INDEX search_modes_mode_idx ON search_modes(mode);
+        CREATE INDEX definition_categories_category_idx ON definition_categories(category);
+        CREATE INDEX search_mode_parameters_parameter_idx ON search_mode_parameters(parameter);
+        CREATE INDEX definition_features_genre_idx ON definition_features(supports_genre);
         """
     )
     return connection
@@ -210,12 +237,49 @@ def build_database(db_path: Path, manifest: dict[str, Any], records: list[dict[s
                                 str(value["desc"]) if value.get("desc") is not None else None,
                                 canonical_json(value)))
                     counts["category_mappings"] += 1
+            native_categories: set[tuple[str, str]] = set()
+            if isinstance(mappings, list):
+                for value in mappings:
+                    if isinstance(value, dict) and value.get("cat") is not None:
+                        native_categories.add((str(value["cat"]), "categorymappings"))
+            declared_categories = capabilities.get("categories", {})
+            if isinstance(declared_categories, dict):
+                native_categories.update((str(key), "categories") for key in declared_categories)
+            for category, origin in sorted(native_categories):
+                db.execute("INSERT INTO definition_categories VALUES (?, ?, ?)",
+                           (identifier, category, origin))
+                counts["definition_categories"] += 1
             modes = capabilities.get("modes", {})
+            supports_genre = False
             if isinstance(modes, dict):
                 for name, parameters in sorted(modes.items()):
                     db.execute("INSERT INTO search_modes VALUES (?, ?, ?)",
                                (identifier, str(name), canonical_json(parameters)))
                     counts["search_modes"] += 1
+                    if isinstance(parameters, list):
+                        for position, parameter in enumerate(parameters):
+                            parameter = str(parameter)
+                            db.execute(
+                                "INSERT INTO search_mode_parameters VALUES (?, ?, ?, ?)",
+                                (identifier, str(name), position, parameter),
+                            )
+                            counts["search_mode_parameters"] += 1
+                            supports_genre |= parameter == "genre"
+            authentication = impl.get("authentication")
+            search = impl.get("search", {})
+            paths = search.get("paths", []) if isinstance(search, dict) else []
+            db.execute(
+                "INSERT INTO definition_features VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+                (
+                    identifier, int(authentication is not None),
+                    int(isinstance(authentication, dict) and "captcha" in authentication),
+                    int(impl.get("download") is not None),
+                    int(supports_genre), int(capabilities.get("allowrawsearch") is True),
+                    len(paths) if isinstance(paths, list) else 0,
+                    max(0, len(spec["baseUrls"]) - 1) + len(spec.get("legacyUrls", [])),
+                ),
+            )
+            counts["definition_features"] += 1
             for position, field in enumerate(impl.get("settings", [])):
                 if not isinstance(field, dict):
                     continue
